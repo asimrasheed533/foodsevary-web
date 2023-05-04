@@ -2,6 +2,7 @@ import React from "react";
 import banner from "../asstes/banner.png";
 import bannertwo from "../asstes/bannertwo.png";
 import productimg from "../asstes/productimg.png";
+import banner1 from "../asstes/banner1.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper";
 import "swiper/css";
@@ -9,25 +10,25 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import ProductCard from "../compounts/ProductCard";
-export default function Products() {
+export default function Services() {
   const productslist = [
     {
-      img: productimg,
+      img: banner,
       heading: "Kingdom Tower",
       subheading: "Wood Flooring",
     },
     {
-      img: productimg,
+      img: banner,
       heading: "Kingdom Tower",
       subheading: "Wood Flooring",
     },
     {
-      img: productimg,
+      img: banner,
       heading: "Kingdom Tower",
       subheading: "Wood Flooring",
     },
     {
-      img: productimg,
+      img: banner,
       heading: "Kingdom Tower",
       subheading: "Wood Flooring",
     },
@@ -46,7 +47,7 @@ export default function Products() {
             loop={true}
           >
             <SwiperSlide>
-              <img src={banner} alt="products" />
+              <img src={banner1} alt="products" />
             </SwiperSlide>
             <SwiperSlide>
               <img src={bannertwo} alt="products" />
@@ -58,7 +59,7 @@ export default function Products() {
           {productslist.map((product, index) => {
             return (
               <ProductCard
-                productimg={product.img}
+                img={product.img}
                 heading={product.heading}
                 subheading={product.subheading}
               />

@@ -3,7 +3,12 @@ import { Link } from "react-router-dom";
 import banner from "../asstes/banner.png";
 import productimg from "../asstes/productimg.png";
 import showroom from "../asstes/showroom.png";
-import tabel from "../asstes/tabel.png";
+import cate1 from "../asstes/cate1.png";
+import cate3 from "../asstes/cate3.png";
+import cate4 from "../asstes/cate4.png";
+import cate5 from "../asstes/cate5.png";
+import cate6 from "../asstes/cate6.png";
+import cate7 from "../asstes/cate7.png";
 import ProductCard from "../compounts/ProductCard";
 import SelectCatagorieCard from "../compounts/SelectCatagorieCard";
 
@@ -141,31 +146,12 @@ export default function Home() {
           BROWSE OUR CATEGORIES
         </div>
 
-        <SelectCatagorieCard
-          tabel={tabel}
-          heading="TABEL"
-          subheading="230 products"
-        />
-        <SelectCatagorieCard
-          tabel={tabel}
-          heading="TABEL"
-          subheading="230 products"
-        />
-        <SelectCatagorieCard
-          tabel={tabel}
-          heading="TABEL"
-          subheading="230 products"
-        />
-        <SelectCatagorieCard
-          tabel={tabel}
-          heading="TABEL"
-          subheading="230 products"
-        />
-        <SelectCatagorieCard
-          tabel={tabel}
-          heading="TABEL"
-          subheading="230 products"
-        />
+        <SelectCatagorieCard tabel={cate1} heading="Fast Food" />
+        <SelectCatagorieCard tabel={cate7} heading="PIZZA" />
+        <SelectCatagorieCard tabel={cate6} heading="WINGS" />
+        <SelectCatagorieCard tabel={cate5} heading="INDIAN" />
+        <SelectCatagorieCard tabel={cate4} heading="REWARDs" />
+        <SelectCatagorieCard tabel={cate3} heading="BEST OVERALL" />
       </div>
       <div className="product__container">
         <div className="product__container__header__text__wraper">

@@ -3,9 +3,8 @@ import "./style.scss";
 import Home from "./screens/Home";
 import React from "react";
 import ReactDOM from "react-dom/client";
-
 import RootLayout from "./RootLayout";
-import Products from "./screens/Products";
+import Services from "./screens/Services";
 
 const router = createBrowserRouter([
   {
@@ -18,8 +17,8 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "/products",
-        element: <Products />,
+        path: "/services",
+        element: <Services />,
       },
     ],
   },
