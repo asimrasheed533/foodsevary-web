@@ -1,7 +1,7 @@
 import React from "react";
 import banner from "../asstes/banner.png";
 import bannertwo from "../asstes/bannertwo.png";
-import productimg from "../asstes/productimg.png";
+import bannertwo from "../asstes/bannertwo.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper";
 import "swiper/css";
@@ -12,42 +12,42 @@ import ProductCard from "../compounts/ProductCard";
 export default function TabelProducts() {
   const productslist = [
     {
-      img: productimg,
+      img: bannertwo,
       heading: "Tabel Tower",
       subheading: "Wood Flooring",
     },
     {
-      img: productimg,
+      img: bannertwo,
       heading: "Tabel Tower",
       subheading: "Wood Flooring",
     },
     {
-      img: productimg,
+      img: bannertwo,
       heading: "Kingdom Tower",
       subheading: "Wood Flooring",
     },
     {
-      img: productimg,
+      img: bannertwo,
       heading: "Kingdom Tower",
       subheading: "Wood Flooring",
     },
     {
-      img: productimg,
+      img: bannertwo,
       heading: "Kingdom Tower",
       subheading: "Wood Flooring",
     },
     {
-      img: productimg,
+      img: bannertwo,
       heading: "Kingdom Tower",
       subheading: "Wood Flooring",
     },
     {
-      img: productimg,
+      img: bannertwo,
       heading: "Kingdom Tower",
       subheading: "Wood Flooring",
     },
     {
-      img: productimg,
+      img: bannertwo,
       heading: "Kingdom Tower",
       subheading: "Wood Flooring",
     },
@@ -86,7 +86,7 @@ export default function TabelProducts() {
           {productslist.map((product, index) => {
             return (
               <ProductCard
-                productimg={product.img}
+                bannertwo={product.img}
                 heading={product.heading}
                 subheading={product.subheading}
               />

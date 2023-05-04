@@ -55,10 +55,7 @@ export default function Header() {
                   About
                 </Link>
                 <Link className="header__navbar__link" to="/products">
-                  Blog
-                </Link>
-                <Link className="header__navbar__link" to="/products">
-                  Services
+                  Products
                 </Link>
                 <Link className="header__navbar__link" to="/">
                   Contact

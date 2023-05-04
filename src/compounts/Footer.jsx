@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../asstes/logo.png";
 export default function Footer() {
   return (
     <>
       <div className="footer__container">
         <div className="footer__container__col">
           <div className="footer__logo">
-            <img src={logo} alt="Footer" />
+            <img src="/" alt="Footer" />
           </div>
           <div className="footer__icon">icon</div>
         </div>

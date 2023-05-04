@@ -4,7 +4,7 @@ import Home from "./screens/Home";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import RootLayout from "./RootLayout";
-import Services from "./screens/Services";
+import Products from "./screens/Products";
 
 const router = createBrowserRouter([
   {
@@ -17,8 +17,8 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "/services",
-        element: <Services />,
+        path: "/products",
+        element: <Products />,
       },
     ],
   },
