@@ -1,10 +1,10 @@
 import React from "react";
 import banner from "../asstes/banner.png";
-import bannertwo from "../asstes/bannertwo.png";
-import productimg from "../asstes/productimg.png";
+
+import banner3 from "../asstes/banner3.png";
 import banner1 from "../asstes/banner1.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper";
+import { Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -38,8 +38,7 @@ export default function Services() {
       <div className="product__banner">
         <div className="product__banner__img">
           <Swiper
-            navigation={true}
-            modules={[Navigation, Autoplay]}
+            modules={[Autoplay]}
             autoplay={{
               delay: 2500,
               disableOnInteraction: false,
@@ -50,7 +49,7 @@ export default function Services() {
               <img src={banner1} alt="products" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src={bannertwo} alt="products" />
+              <img src={banner3} alt="products" />
             </SwiperSlide>
           </Swiper>
         </div>
