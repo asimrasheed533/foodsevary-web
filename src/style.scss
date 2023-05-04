@@ -576,6 +576,20 @@ body {
   font-weight: bold;
   color: $secondary;
 }
+.swiper__slider__heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 0em;
+
+  font-size: 32px;
+  font-weight: bold;
+}
+.swiper__slider__heading span {
+  color: $secondary;
+  margin: 0px 7px;
+}
 //-------------------------------------------------------------------
 @media (max-width: 900px) {
   .landing__main__banner__img__text__heading {

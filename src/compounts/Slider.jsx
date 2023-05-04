@@ -27,6 +27,9 @@ export default function Slider() {
 
   return (
     <>
+      <div className="swiper__slider__heading">
+        Top Rated <span>Products</span>
+      </div>
       <div className="arrival__card__main__container">
         <Swiper
           slidesPerView={isSliderPreview}
