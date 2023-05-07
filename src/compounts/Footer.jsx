@@ -32,7 +32,7 @@ export default function Footer() {
             Services
           </div>
           <Link to="/" className="footer__row__contant">
-            Measuremnent Store
+            Fast Delivery
           </Link>
           <Link to="/" className="footer__row__contant">
             Product Advice
@@ -42,10 +42,9 @@ export default function Footer() {
         <div className="footer__container__col">
           <div className="footer__row__heading">Contact information</div>
           <div className="footer__row__contant">
-            3181 Al Imam Saud Ibn Abdul Aziz Branch Rd, An Nuzhah, Riyadh 12474,
-            Saudi Arabia
+            Mohala rasool pora near garden town fasilabad
           </div>
-          <div className="footer__row__contant">+92-300300300</div>
+          <div className="footer__row__contant">+92-1234500</div>
         </div>
       </div>
     </>

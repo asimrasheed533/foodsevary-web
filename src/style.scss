@@ -246,7 +246,7 @@ body {
   transition: 0.4s ease-in-out;
 }
 .filter__products__row__button:hover {
-  background-color: #00a827;
+  background-color: $secondary;
   color: white;
   padding: 8px 16px;
   transition: 0.4s ease-in-out;

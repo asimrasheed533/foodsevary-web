@@ -137,30 +137,6 @@ export default function Home() {
         <SelectCatagorieCard tabel={cate3} heading="BEST OVERALL" />
       </div>
       <Slider />
-      <div className="showrom__container">
-        <div className="showrom__container__img">
-          <img src={showroom} alt="products" />
-        </div>
-        <div className="showrom__container__content">
-          <div className="showrom__container__content__heading">
-            Our ShowRooms
-          </div>
-          <div className="showrom__container__content__sub__heading">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
-            ipsa commodi totam corporis consequatur perspiciatis alias
-            voluptatem. Voluptatibus suscipit sit pariatur, recusandae soluta
-            omnis voluptatem illum, sequi repudiandae otam corporis consequatur
-            perspiciatis alias voluptatem. Voluptatibus suscipit sit pariatur,
-            recusandae soluta omnis voluptatem illum, sequi repudianda dicta
-            reprehenderit.
-          </div>
-          <div className="product__see__more__btn">
-            <Link className="product__see__more__btn__link" to="/product">
-              See More
-            </Link>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }
