@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import ClickAwayListener from "react-click-away-listener";
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -23,6 +23,7 @@ export default function Header() {
       }
     });
   }, []);
+  const navigate = useNavigate();
   return (
     <div className="header__section">
       <div
@@ -48,16 +49,44 @@ export default function Header() {
               scrollY={true}
             >
               <div className="header__entries">
-                <Link className="header__navbar__link" to="/">
+                <Link
+                  className="header__navbar__link"
+                  to="/"
+                  onClick={() => {
+                    navigate("/");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   Home
                 </Link>
-                <Link className="header__navbar__link" to="/">
+                <Link
+                  className="header__navbar__link"
+                  to="/"
+                  onClick={() => {
+                    navigate("/");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   About
                 </Link>
-                <Link className="header__navbar__link" to="/products">
+                <Link
+                  className="header__navbar__link"
+                  to="/products"
+                  onClick={() => {
+                    navigate("/");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   Products
                 </Link>
-                <Link className="header__navbar__link" to="/">
+                <Link
+                  className="header__navbar__link"
+                  to="/"
+                  onClick={() => {
+                    navigate("/");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   Contact
                 </Link>
               </div>

@@ -1,70 +1,88 @@
 import React, { useState } from "react";
-import ProductCard from "../compounts/ProductCard";
 import banner from "../asstes/banner.png";
-
+import ProductCard from "../compounts/ProductCard";
 const products = [
   {
     img: banner,
-    heading: "Burger",
-    prise: "$99",
-    category: "burger",
-  },
-  {
-    img: banner,
-    heading: "Piza",
-    prise: "$99",
+    heading: "Pizza Large",
+    prise: "Rs:100",
     category: "pizza",
   },
   {
     img: banner,
-    heading: "Burger",
-    prise: "$99",
-    category: "burger",
+    heading: "Piza small",
+    prise: "500",
+    category: "pizza",
+  },
+  {
+    img: banner,
+    heading: "pizza",
+    prise: "Rs:100",
+    category: "pizza",
   },
   {
     img: banner,
     heading: "Rice",
-    prise: "$99",
+    prise: "Rs:100",
     category: "Rice",
   },
   {
     img: banner,
-    heading: "Burger",
-    prise: "$99",
-    category: "burger",
+    heading: "pizza",
+    prise: "1000",
+    category: "pizza",
   },
   {
     img: banner,
-    heading: "Burger",
-    prise: "Rs100",
-    category: "burger",
+    heading: "pizza",
+    prise: "1000",
+    category: "pizza",
   },
   {
     img: banner,
-    heading: "Burger",
-    prise: "Rs100",
-    category: "burger",
+    heading: "pizza",
+    prise: "1000",
+    category: "pizza",
+  },
+  {
+    img: banner,
+    heading: "pizza",
+    prise: "5000",
+    prisefilter: "5000",
+    category: "pizza",
+  },
+  {
+    img: banner,
+    heading: "pizza",
+    prise: "5000",
+    category: "pizza",
+  },
+  {
+    img: banner,
+    heading: "pizza",
+    prise: "5000",
+    category: "pizza",
   },
 ];
-export default function Products() {
-  const [category, setCategory] = useState("all");
+export default function pizza() {
+  const [prise, setPrise] = useState("all");
   const filteredProducts =
-    category === "all"
+    prise === "all"
       ? products
-      : products.filter((product) => product.category === category);
+      : products.filter((product) => product.prise === prise);
   return (
     <>
       <div className="product__container">
         <div className="product__container__header__text__wraper">
-          <div className="product__header__heading">Top Rated Menu Items</div>
+          <div className="product__header__heading">Top Rated Pizza</div>
         </div>
         <div className="filter__products__col">
           <div className="filter__products__row">
-            <div className="filter__products__row__type">Filter Type</div>
+            <div className="filter__products__row__type">Filter Prise</div>
             <div className="filter__products__row__button__wraper">
               <button
                 onClick={() => {
-                  setCategory("all");
+                  setPrise("all");
                 }}
                 className="filter__products__row__button"
               >
@@ -72,27 +90,35 @@ export default function Products() {
               </button>
               <button
                 onClick={() => {
-                  setCategory("burger");
+                  setPrise("Rs:100");
                 }}
                 className="filter__products__row__button"
               >
-                Burgers
+                Rs 100/
               </button>
               <button
                 onClick={() => {
-                  setCategory("pizza");
+                  setPrise("500");
                 }}
                 className="filter__products__row__button"
               >
-                Pizza
+                Rs 500/
               </button>
               <button
                 onClick={() => {
-                  setCategory("Rice");
+                  setPrise("500");
                 }}
                 className="filter__products__row__button"
               >
-                Rice
+                Rs 1000/
+              </button>
+              <button
+                onClick={() => {
+                  setPrise("5000");
+                }}
+                className="filter__products__row__button"
+              >
+                Rs 5000/
               </button>
             </div>
           </div>

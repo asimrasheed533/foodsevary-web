@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import banner from "../asstes/banner.png";
-import showroom from "../asstes/showroom.png";
+
 import cate1 from "../asstes/cate1.png";
 import cate3 from "../asstes/cate3.png";
 import cate4 from "../asstes/cate4.png";
@@ -130,13 +130,15 @@ export default function Home() {
         </div>
 
         <SelectCatagorieCard tabel={cate1} heading="Fast Food" />
-        <SelectCatagorieCard tabel={cate7} heading="PIZZA" />
+        <SelectCatagorieCard tabel={cate7} heading="PIZZA" link="/pizza" />
         <SelectCatagorieCard tabel={cate6} heading="WINGS" />
         <SelectCatagorieCard tabel={cate5} heading="INDIAN" />
         <SelectCatagorieCard tabel={cate4} heading="REWARDs" />
         <SelectCatagorieCard tabel={cate3} heading="BEST OVERALL" />
       </div>
-      <Slider />
+      <div className="collection__details__similar__items__list">
+        <Slider />
+      </div>
     </div>
   );
 }

@@ -5,6 +5,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import RootLayout from "./RootLayout";
 import Products from "./screens/Products";
+import Details from "./screens/details";
+import Pizza from "./screens/pizza";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,14 @@ const router = createBrowserRouter([
       {
         path: "/products",
         element: <Products />,
+      },
+      {
+        path: "/details",
+        element: <Details />,
+      },
+      {
+        path: "/pizza",
+        element: <Pizza />,
       },
     ],
   },
