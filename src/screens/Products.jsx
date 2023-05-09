@@ -16,7 +16,6 @@ const products = [
   {
     img: piz2,
     heading: "Cheese Piza",
-    prise: "$99",
     category: "pizza",
   },
   {
@@ -66,7 +65,7 @@ export default function Products() {
               </button>
               <button
                 onClick={() => {
-                  setCategory("burger");
+                  setCategory("snacks");
                 }}
                 className="filter__products__row__button"
               >
