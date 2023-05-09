@@ -16,7 +16,7 @@ const products = [
   },
   {
     img: banner,
-    heading: "pizza",
+    heading: "kbab piza",
     prise: "Rs:100",
     category: "pizza",
   },

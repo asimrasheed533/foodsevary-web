@@ -129,12 +129,11 @@ export default function Home() {
           BROWSE OUR CATEGORIES
         </div>
 
-        <SelectCatagorieCard tabel={cate1} heading="Fast Food" />
-        <SelectCatagorieCard tabel={cate7} heading="PIZZA" link="/pizza" />
-        <SelectCatagorieCard tabel={cate6} heading="WINGS" />
-        <SelectCatagorieCard tabel={cate5} heading="INDIAN" />
-        <SelectCatagorieCard tabel={cate4} heading="REWARDs" />
-        <SelectCatagorieCard tabel={cate3} heading="BEST OVERALL" />
+        <SelectCatagorieCard tabel={cate1} heading="Pizza"/>
+        <SelectCatagorieCard tabel={cate6} heading="snacks" />
+        <SelectCatagorieCard tabel={cate5} heading="Barbecue" />
+        <SelectCatagorieCard tabel={cate4} heading="Bryani" />
+        <SelectCatagorieCard tabel={cate3} heading="Chicken Curry" />
       </div>
       <div className="collection__details__similar__items__list">
         <Slider />
