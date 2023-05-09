@@ -33,7 +33,7 @@ const products = [
     category: "pizza",
   },
 ];
-export default function pizza() {
+export default function Snacks() {
   const [prise, setPrise] = useState("all");
   const filteredProducts =
     prise === "all"

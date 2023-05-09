@@ -7,6 +7,7 @@ import RootLayout from "./RootLayout";
 import Products from "./screens/Products";
 import Details from "./screens/details";
 import Pizza from "./screens/pizza";
+import Snacks from "./screens/Snacks";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/pizza",
         element: <Pizza />,
+      },
+      {
+        path: "/snacks",
+        element: <Snacks />,
       },
     ],
   },
