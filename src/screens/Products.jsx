@@ -1,50 +1,44 @@
 import React, { useState } from "react";
 import ProductCard from "../compounts/ProductCard";
-import banner from "../asstes/banner.png";
+import piz1 from "../asstes/piz1.jpg";
+import piz2 from "../asstes/piz2.png";
+import piz3 from "../asstes/piz3.png";
+import piz4 from "../asstes/piz4.jpg";
+import piz5 from "../asstes/piz5.jpg";
 
 const products = [
   {
-    img: banner,
-    heading: "Burger",
-    prise: "$99",
-    category: "burger",
+    img: piz1,
+    heading: "Tikka pizza",
+    
+    category: "pizza",
   },
   {
-    img: banner,
-    heading: "Piza",
+    img: piz2,
+    heading: "Cheese Piza",
     prise: "$99",
     category: "pizza",
   },
   {
-    img: banner,
-    heading: "Burger",
-    prise: "$99",
-    category: "burger",
+    img: piz3,
+    heading: "kbab pizza",
+  
+    category: "pizza",
   },
   {
-    img: banner,
-    heading: "Rice",
-    prise: "$99",
-    category: "Rice",
+    img: piz4,
+    heading: "meat pizza",
+
+    category: "pizza",
   },
   {
-    img: banner,
-    heading: "Burger",
-    prise: "$99",
-    category: "burger",
+    img: piz5,
+    heading: "veg pizza",
+    
+    category: "pizza",
   },
-  {
-    img: banner,
-    heading: "Burger",
-    prise: "Rs100",
-    category: "burger",
-  },
-  {
-    img: banner,
-    heading: "Burger",
-    prise: "Rs100",
-    category: "burger",
-  },
+
+  
 ];
 export default function Products() {
   const [category, setCategory] = useState("all");

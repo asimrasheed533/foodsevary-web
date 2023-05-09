@@ -1,68 +1,40 @@
 import React, { useState } from "react";
-import banner from "../asstes/banner.png";
+// import banner from "../asstes/banner.png";
+import piz1 from "../asstes/piz1.jpg";
+import piz2 from "../asstes/piz2.png";
+import piz3 from "../asstes/piz3.png";
+import piz4 from "../asstes/piz4.jpg";
+import piz5 from "../asstes/piz5.jpg";
+
+
 import ProductCard from "../compounts/ProductCard";
 const products = [
   {
-    img: banner,
-    heading: "Pizza Large",
-    prise: "Rs:100",
+    img: piz1,
+    heading: "Tikka pizza",
     category: "pizza",
   },
   {
-    img: banner,
-    heading: "Piza small",
-    prise: "500",
+    img: piz2,
+    heading: "cheese Pizza",
     category: "pizza",
   },
   {
-    img: banner,
+    img: piz3,
     heading: "kbab piza",
-    prise: "Rs:100",
     category: "pizza",
   },
   {
-    img: banner,
-    heading: "Rice",
-    prise: "Rs:100",
-    category: "Rice",
-  },
-  {
-    img: banner,
-    heading: "pizza",
-    prise: "1000",
+    img: piz4,
+    heading: "Meat pizza",
     category: "pizza",
   },
   {
-    img: banner,
-    heading: "pizza",
-    prise: "1000",
+    img: piz5,
+    heading: "Veg pizza",
     category: "pizza",
   },
-  {
-    img: banner,
-    heading: "pizza",
-    prise: "1000",
-    category: "pizza",
-  },
-  {
-    img: banner,
-    heading: "pizza",
-    prise: "5000",
-    prisefilter: "5000",
-    category: "pizza",
-  },
-  {
-    img: banner,
-    heading: "pizza",
-    prise: "5000",
-    category: "pizza",
-  },
-  {
-    img: banner,
-    heading: "pizza",
-    prise: "5000",
-    category: "pizza",
-  },
+
 ];
 export default function pizza() {
   const [prise, setPrise] = useState("all");

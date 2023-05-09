@@ -1,7 +1,5 @@
 import React from "react";
 import banner from "../asstes/banner.png";
-import bannertwo from "../asstes/bannertwo.png";
-import bannertwo from "../asstes/bannertwo.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper";
 import "swiper/css";
