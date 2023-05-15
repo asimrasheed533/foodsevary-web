@@ -1,46 +1,40 @@
 import React, { useState } from "react";
-import piz1 from "../asstes/piz1.jpg";
-import piz2 from "../asstes/piz2.png";
-import piz3 from "../asstes/piz3.png";
-import piz4 from "../asstes/piz4.jpg";
-import piz5 from "../asstes/piz5.jpg"
+import b1 from "../asstes/b1.jpg";
+import b2 from "../asstes/b2.jpg";
+import b3 from "../asstes/b3.jpg";
+import b4 from "../asstes/b4.webp";
 
 import ProductCard from "../compounts/ProductCard";
 const products = [
   {
-    img: piz1,
-    heading: "Tikka pizza",
+    img: b1,
+    heading: "Fish biryani",
       prise:"500",
-    category: "pizza",
+    category: "Biryani",
   },
   {
-    img: piz2,
-    heading: "cheese Pizza",
-    prise:"100",
-    category: "pizza",
+    img: b2,
+    heading: "Sindhi biryani",
+    prise:"1000",
+    category: "Biryani",
   
   },
   {
-    img: piz3,
-    heading: "kbab piza",
-    category: "pizza",
+    img: b3,
+    heading: "Tikka biryani",
+    category: "Biryani",
     prise:"5000",
   },
   {
-    img: piz4,
-    heading: "Meat pizza",
-    category: "pizza",
+    img: b4,
+    heading: "Veg biryani",
+    category: "Biryani",
     prise:"100",
   },
-  {
-    img: piz5,
-    heading: "veg pizza",
-    category: "pizza",
-    prise:"1000",
-  },
+  
   
 ];
-export default function pizza() {
+export default function Biryani() {
   const [prise, setPrise] = useState("all");
   const filteredProducts =
     prise === "all"
@@ -50,7 +44,7 @@ export default function pizza() {
     <>
       <div className="product__container">
         <div className="product__container__header__text__wraper">
-          <div className="product__header__heading">Top Rated Pizza</div>
+          <div className="product__header__heading">Top Rated Biryani</div>
         </div>
         <div className="filter__products__col">
           <div className="filter__products__row">

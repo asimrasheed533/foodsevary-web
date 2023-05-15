@@ -8,7 +8,9 @@ import Products from "./screens/Products";
 import Details from "./screens/details";
 import Pizza from "./screens/pizza";
 import Snacks from "./screens/Snacks";
-
+import Biryani from "./screens/Biryani";
+import Barbecue from "./screens/Barbecue";
+import Chickencurries from"./screens/\Chickencurries";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -35,6 +37,18 @@ const router = createBrowserRouter([
         path: "/snacks",
         element: <Snacks />,
       },
+      {
+        path: "/biryani",
+        element: <Biryani />,
+      },
+      {
+        path: "/barbecue",
+        element: <Barbecue />,
+      },
+      {
+        path:"/chickencurries",
+        element:<Chickencurries/>
+      }
     ],
   },
   {

@@ -14,16 +14,16 @@ export default function Footer() {
           <div className="footer__row__heading">Products</div>
           <div className="footer__row__links">
             <Link to="/" className="footer__row__contant">
-              Sand Store
+              Pizza
             </Link>
             <Link to="/" className="footer__row__contant">
-              Stone
+              Snacks
             </Link>
             <Link to="/" className="footer__row__contant">
-              Cement
+              Barbecue
             </Link>
             <Link to="/" className="footer__row__contant">
-              Soft Store
+              Biryani
             </Link>
           </div>
         </div>
@@ -37,7 +37,7 @@ export default function Footer() {
           <Link to="/" className="footer__row__contant">
             Product Advice
           </Link>
-          <div className="footer__row__contant">Interior Design</div>
+          <div className="footer__row__contant">Healthy food</div>
         </div>
         <div className="footer__container__col">
           <div className="footer__row__heading">Contact information</div>

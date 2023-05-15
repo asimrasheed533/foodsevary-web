@@ -111,7 +111,7 @@ export default function Details() {
             </div>
           </div>
           <button className="collection__details__main__right__button">
-            Book in Small and Medium
+            Order now
           </button>
           <div className="collection__details__main__right__sub__heading__reverse">
             Description & Material

@@ -1,46 +1,47 @@
 import React, { useState } from "react";
-import piz1 from "../asstes/piz1.jpg";
-import piz2 from "../asstes/piz2.png";
-import piz3 from "../asstes/piz3.png";
-import piz4 from "../asstes/piz4.jpg";
-import piz5 from "../asstes/piz5.jpg"
+import bbq1 from "../asstes/bbq1.jpg";
+import bbq2 from "../asstes/bbq2.jpg";
+import bbq3 from "../asstes/bbq3.webp";
+import bbq4 from "../asstes/bbq4.jpg";
+import bbq5 from "../asstes/bbq5.jpg";
 
 import ProductCard from "../compounts/ProductCard";
 const products = [
   {
-    img: piz1,
-    heading: "Tikka pizza",
+    img: bbq1,
+    heading: "crispy chicken",
       prise:"500",
-    category: "pizza",
+    category: "barbecue",
   },
   {
-    img: piz2,
-    heading: "cheese Pizza",
-    prise:"100",
-    category: "pizza",
+    img: bbq2,
+    heading: "chicken pops",
+    prise:"1000",
+    category: "barbecue",
   
   },
   {
-    img: piz3,
-    heading: "kbab piza",
-    category: "pizza",
+    img: bbq3,
+    heading: "mlai boti",
+    category: "barbecue",
     prise:"5000",
   },
   {
-    img: piz4,
-    heading: "Meat pizza",
-    category: "pizza",
+    img: bbq4,
+    heading: "sekh kbab",
+    category: "barbecue",
     prise:"100",
   },
   {
-    img: piz5,
-    heading: "veg pizza",
-    category: "pizza",
+    img: bbq5,
+    heading: "chicken tikka",
+    category: "barbecue",
     prise:"1000",
   },
   
+  
 ];
-export default function pizza() {
+export default function Barbecue() {
   const [prise, setPrise] = useState("all");
   const filteredProducts =
     prise === "all"
@@ -50,7 +51,7 @@ export default function pizza() {
     <>
       <div className="product__container">
         <div className="product__container__header__text__wraper">
-          <div className="product__header__heading">Top Rated Pizza</div>
+          <div className="product__header__heading">Top Rated Chicken curries</div>
         </div>
         <div className="filter__products__col">
           <div className="filter__products__row">

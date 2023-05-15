@@ -1,37 +1,37 @@
 import React, { useState } from "react";
-import piz1 from "../asstes/piz1.jpg";
-import piz2 from "../asstes/piz2.png";
-import piz3 from "../asstes/piz3.png";
-import piz4 from "../asstes/piz4.jpg";
-import piz5 from "../asstes/piz5.jpg";
+import s1 from "../asstes/s1.jpg";
+import s2 from "../asstes/s2.jpg";
+import s3 from "../asstes/s3.jpg";
+import s4 from "../asstes/s4.jpg";
 
 import ProductCard from "../compounts/ProductCard";
 const products = [
   {
-    img: piz1,
-    heading: "Tikka pizza",
-    category: "pizza",
+    img: s1,
+    heading: "pkory",
+    prise:"500",
+    category: "snacks",
   },
   {
-    img: piz2,
-    heading: "cheese Pizza",
-    category: "pizza",
+    img: s2,
+    heading: "fruit chat",
+    category: "snacks",
+    prise:"100",
   },
   {
-    img: piz3,
-    heading: "kbab piza",
-    category: "pizza",
+    img:s3,
+    heading:"cheeseballs",
+    category:"snacks",
+    prise:"5000",
   },
+ 
   {
-    img: piz4,
-    heading: "Meat pizza",
-    category: "pizza",
+    img: s4,
+    heading: "french fries",
+    category: "snacks",
+    prise:"1000",
   },
-  {
-    img: piz5,
-    heading: "Veg pizza",
-    category: "pizza",
-  },
+  
 ];
 export default function Snacks() {
   const [prise, setPrise] = useState("all");
@@ -43,7 +43,7 @@ export default function Snacks() {
     <>
       <div className="product__container">
         <div className="product__container__header__text__wraper">
-          <div className="product__header__heading">Top Rated Pizza</div>
+          <div className="product__header__heading">Top Rated Snacks</div>
         </div>
         <div className="filter__products__col">
           <div className="filter__products__row">
@@ -59,7 +59,7 @@ export default function Snacks() {
               </button>
               <button
                 onClick={() => {
-                  setPrise("Rs:100");
+                  setPrise("100");
                 }}
                 className="filter__products__row__button"
               >
@@ -75,7 +75,7 @@ export default function Snacks() {
               </button>
               <button
                 onClick={() => {
-                  setPrise("500");
+                  setPrise("1000");
                 }}
                 className="filter__products__row__button"
               >
