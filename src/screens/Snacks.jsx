@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import s1 from "../asstes/s1.jpg";
 import s2 from "../asstes/s2.jpg";
-import s3 from "../asstes/s3.jpg";
+import s3 from "../asstes/s3.webp";
 import s4 from "../asstes/s4.jpg";
 
 import ProductCard from "../compounts/ProductCard";

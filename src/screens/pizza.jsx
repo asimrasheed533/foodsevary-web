@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import piz1 from "../asstes/piz1.jpg";
-import piz2 from "../asstes/piz2.png";
+import piz2 from "../asstes/piz2.jpg";
 import piz3 from "../asstes/piz3.png";
 import piz4 from "../asstes/piz4.jpg";
 import piz5 from "../asstes/piz5.jpg"

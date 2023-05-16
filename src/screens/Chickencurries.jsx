@@ -1,42 +1,43 @@
 import React, { useState } from "react";
-import bbq1 from "../asstes/bbq1.jpg";
-import bbq2 from "../asstes/bbq2.jpg";
-import bbq3 from "../asstes/bbq3.webp";
-import bbq4 from "../asstes/bbq4.jpg";
-import bbq5 from "../asstes/bbq5.jpg";
+import chic1 from "../asstes/chic1.webp";
+import chic2 from "../asstes/chic2.jpg";
+import chic3 from "../asstes/chic3.jpg";
+import chic4 from "../asstes/chic4.jpg";
+import chic5 from "../asstes/chic5.webp"
+
 
 import ProductCard from "../compounts/ProductCard";
 const products = [
   {
-    img: bbq1,
-    heading: "crispy chicken",
+    img: chic1,
+    heading: "boneless chicken",
       prise:"500",
-    category: "barbecue",
+    category: "chicken",
   },
   {
-    img: bbq2,
-    heading: "chicken pops",
+    img: chic2,
+    heading: "Makhni handi",
     prise:"1000",
-    category: "barbecue",
+    category: "chicken",
   
   },
   {
-    img: bbq3,
-    heading: "mlai boti",
-    category: "barbecue",
+    img: chic3,
+    heading: "Hara masala",
+    category: "chicken",
     prise:"5000",
   },
   {
-    img: bbq4,
-    heading: "sekh kbab",
-    category: "barbecue",
+    img: chic4,
+    heading: "tikka karahi",
+    category: "chicken",
     prise:"100",
   },
   {
-    img: bbq5,
-    heading: "chicken tikka",
-    category: "barbecue",
-    prise:"1000",
+    img: chic5,
+    heading: "white karahi",
+    category: "chicken",
+    prise:"100",
   },
   
   

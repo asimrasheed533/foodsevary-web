@@ -1,23 +1,29 @@
 import React, { useState } from "react";
 import ProductCard from "../compounts/ProductCard";
 import piz1 from "../asstes/piz1.jpg";
-import piz2 from "../asstes/piz2.png";
+import piz2 from "../asstes/piz2.jpg";
 import piz3 from "../asstes/piz3.png";
 import piz4 from "../asstes/piz4.jpg";
 import piz5 from "../asstes/piz5.jpg";
 import s1 from "../asstes/s1.jpg";
 import s2 from "../asstes/s2.jpg";
-import s3 from "../asstes/s3.jpg";
+import s3 from "../asstes/s3.webp";
 import s4 from "../asstes/s4.jpg";
 import b1 from "../asstes/b1.jpg";
 import b2 from "../asstes/b2.jpg";
 import b3 from "../asstes/b3.jpg";
-import b4 from "../asstes/b4.webp";
+import b4 from "../asstes/b4.jpg";
 import bbq1 from "../asstes/bbq1.jpg";
 import bbq2 from "../asstes/bbq2.jpg";
-import bbq3 from "../asstes/bbq3.webp";
+import bbq3 from "../asstes/bbq3.jpg";
 import bbq4 from "../asstes/bbq4.jpg";
-import bbq5 from "../asstes/bbq5.jpg";
+import bbq5 from "../asstes/bbq5.webp";
+import chic1 from "../asstes/chic1.webp";
+import chic2 from "../asstes/chic2.jpg";
+import chic3 from "../asstes/chic3.jpg";
+import chic4 from "../asstes/chic4.jpg";
+import chic5 from "../asstes/chic5.webp";
+
 const products = [
   {
     img: piz1,
@@ -120,6 +126,36 @@ const products = [
     category: "barbecue",
     prise:"1000",
   },
+  {
+    img: chic1,
+    heading: "boneless chicken",
+      prise:"500",
+    category: "chicken",
+  },
+  {
+    img: chic2,
+    heading: "Makhni handi",
+    prise:"1000",
+    category: "chicken",
+  },
+  {
+    img: chic3,
+    heading: "Hara masala",
+    category: "chicken",
+    prise:"5000",
+  },
+  {
+    img: chic4,
+    heading: "tikka karahi",
+    category: "chicken",
+    prise:"100",
+  },
+  {
+    img: chic5,
+    heading: "white karahi",
+    category: "chicken",
+    prise:"100",
+  },
   
 ];
 export default function Products() {
@@ -177,6 +213,14 @@ export default function Products() {
                 className="filter__products__row__button"
               >
                 Barbecue
+              </button>
+              <button
+                onClick={() => {
+                  setCategory("chicken");
+                }}
+                className="filter__products__row__button"
+              >
+                Chicken
               </button>
             </div>
               

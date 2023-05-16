@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import b1 from "../asstes/b1.jpg";
 import b2 from "../asstes/b2.jpg";
 import b3 from "../asstes/b3.jpg";
-import b4 from "../asstes/b4.webp";
+import b4 from "../asstes/b4.jpg";
 
 import ProductCard from "../compounts/ProductCard";
 const products = [

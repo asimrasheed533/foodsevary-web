@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import bbq1 from "../asstes/bbq1.jpg";
 import bbq2 from "../asstes/bbq2.jpg";
-import bbq3 from "../asstes/bbq3.webp";
+import bbq3 from "../asstes/bbq3.jpg";
 import bbq4 from "../asstes/bbq4.jpg";
-import bbq5 from "../asstes/bbq5.jpg";
+import bbq5 from "../asstes/bbq5.webp";
 
 import ProductCard from "../compounts/ProductCard";
 const products = [
