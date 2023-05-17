@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logofood from "../asstes/logofood.png"
 export default function Footer() {
   return (
     <>
       <div className="footer__container">
         <div className="footer__container__col">
           <div className="footer__logo">
-            <img src="/" alt="Footer" />
+            <img src={logofood} alt="Footer" />
           </div>
-          <div className="footer__icon">icon</div>
         </div>
         <div className="footer__container__col">
           <div className="footer__row__heading">Products</div>

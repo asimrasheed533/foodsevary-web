@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import ClickAwayListener from "react-click-away-listener";
+import logofood from "../asstes/logofood.png"
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
@@ -32,7 +33,9 @@ export default function Header() {
         }
       >
         <div className="header__navbar__link__wraper">
-          <div className="header__logo">Food Sevary</div>
+          <div className="header__logo">
+            <img src={logofood} alt="logo" />
+          </div>
           <div
             className="header__menu"
             onClick={() => setIsNavOpen(!isNavOpen)}

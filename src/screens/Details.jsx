@@ -82,7 +82,7 @@ export default function Details() {
         </div>
         <div className="collection__details__main__right">
           <div className="collection__details__main__right__heading">
-            Faux Fox Fur Jacket
+            Food items
           </div>
           <div className="collection__details__main__right__sub__heading">
             Brand name here

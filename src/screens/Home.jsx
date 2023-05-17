@@ -1,11 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import banner from "../asstes/banner.png";
-import Fade from "react-reveal/Fade";
-import RubberBand from "react-reveal/RubberBand";
-import cate1 from "../asstes/cate1.png";
-import cate3 from "../asstes/cate3.png";
-import cate4 from "../asstes/cate4.png";
+import cate1 from "../asstes/cate1.png"
+import cate4 from "../asstes/cate4.jpg";
 import cate5 from "../asstes/cate5.png";
 import cate6 from "../asstes/cate6.png";
 import cate7 from "../asstes/cate7.png";
@@ -128,27 +125,19 @@ export default function Home() {
       <div className="select__catagories__section">
         <div className="select__catagories__section__heading">
           BROWSE OUR CATEGORIES
-        </div>
-        <RubberBand>
-          <SelectCatagorieCard img={cate7} heading="Pizza" link="/pizza" />
-        </RubberBand>
-        <RubberBand>
-          <SelectCatagorieCard img={cate6} heading="Snacks" link="/snacks" />
-        </RubberBand>
-        <RubberBand>
+        </div> 
           <SelectCatagorieCard
             img={cate5}
             heading="Barbecue"
             link="/barbecue"
           />
-        </RubberBand>
+   
 
+        <SelectCatagorieCard img={cate7} heading="Pizza" link="/pizza" />
+        <SelectCatagorieCard img={cate1} heading="Snacks" link="/snacks" />
+      
         <SelectCatagorieCard img={cate4} heading="Biryani" link="/biryani" />
-        <SelectCatagorieCard
-          img={cate3}
-          heading="Chickencurries"
-          link="/chickencurries"
-        />
+        <SelectCatagorieCard img={cate5} heading="Chickencurries"link="/chickencurries"/>
       </div>
       <div className="collection__details__similar__items__list">
         <Slider />

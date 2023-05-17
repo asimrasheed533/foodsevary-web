@@ -1,7 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
-import banner1 from "../asstes/banner1.png";
+import b2 from "../asstes/b2.jpg";
+import s1 from "../asstes/s1.jpg";
+import bbq4 from "../asstes/bbq4.jpg";
+import piz5 from "../asstes/piz5.jpg";
+import chic1 from "../asstes/chic1.webp";
+import b1 from "../asstes/b1.jpg";
+import s3 from "../asstes/s3.webp";
+import piz1 from "../asstes/piz1.jpg";
+
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -44,28 +52,28 @@ export default function Slider() {
           modules={[Pagination, Autoplay]}
         >
           <SwiperSlide>
-            <Arrivalcard img={banner1} heading="burger" price="$99" />
+            <Arrivalcard img={b2} heading="biryani" price="1000" />
           </SwiperSlide>
           <SwiperSlide>
-            <Arrivalcard img={banner1} heading="burger" price="$99" />
+            <Arrivalcard img={s1} heading="pkory" price="500" />
           </SwiperSlide>
           <SwiperSlide>
-            <Arrivalcard img={banner1} heading="burger" price="$99" />
+            <Arrivalcard img={bbq4} heading="kbab" price="100" />
           </SwiperSlide>
           <SwiperSlide>
-            <Arrivalcard img={banner1} heading="burger" price="$99" />
+            <Arrivalcard img={piz5} heading="veg pizza" price="1000" />
           </SwiperSlide>
           <SwiperSlide>
-            <Arrivalcard img={banner1} heading="burger" price="$99" />
+            <Arrivalcard img={chic1} heading="boneless karahi" price="500" />
           </SwiperSlide>
           <SwiperSlide>
-            <Arrivalcard img={banner1} heading="burger" price="$99" />
+            <Arrivalcard img={piz1} heading="tikka pizza" price="500" />
           </SwiperSlide>
           <SwiperSlide>
-            <Arrivalcard img={banner1} heading="burger" price="$99" />
+            <Arrivalcard img={s3} heading="cheese balls" price="5000" />
           </SwiperSlide>
           <SwiperSlide>
-            <Arrivalcard img={banner1} heading="burger" price="$99" />
+            <Arrivalcard img={b1} heading="crispy chicken" price="500" />
           </SwiperSlide>
         </Swiper>
       </div>
