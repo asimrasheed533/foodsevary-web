@@ -33,8 +33,8 @@ body {
   font-size: 22px;
   font-weight: bold;
 }
-.header__logo img{
-height: 120px;
+.header__logo img {
+  height: 120px;
 }
 .header__navbar {
   width: 100%;
@@ -739,6 +739,7 @@ height: 120px;
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  margin: 3em 0em;
 }
 //-------------------------------------------------------------------
 @media (max-width: 900px) {

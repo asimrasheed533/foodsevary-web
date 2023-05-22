@@ -1,49 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import banner from "../asstes/banner.png";
-import cate1 from "../asstes/cate1.png"
+import cate1 from "../asstes/cate1.png";
 import cate4 from "../asstes/cate4.jpg";
 import cate5 from "../asstes/cate5.png";
-import cate6 from "../asstes/cate6.png";
+// import cate6 from "../asstes/cate6.png";
 import cate7 from "../asstes/cate7.png";
 import healthy from "../asstes/healthy.png";
 import delivery from "../asstes/delivery.png";
 import quality from "../asstes/quality.png";
 import SelectCatagorieCard from "../compounts/SelectCatagorieCard";
 import Slider from "../compounts/Slider";
+import axios from "axios";
 export default function Home() {
-  const filter = [
-    {
-      img: banner,
-      heading: "Burger",
-      prise: "$99",
-    },
-    {
-      img: banner,
-      heading: "Burger",
-      prise: "$99",
-    },
-    {
-      img: banner,
-      heading: "Burger",
-      prise: "$99",
-    },
-    {
-      img: banner,
-      heading: "Burger",
-      prise: "$99",
-    },
-    {
-      img: banner,
-      heading: "Burger",
-      prise: "$99",
-    },
-    {
-      img: banner,
-      heading: "Burger",
-      prise: "$99",
-    },
-  ];
+  const [categories, setCategories] = useState([]);
+  useEffect(() => {
+    axios.get(`${window.location.origin}/api/categories`).then((res) => {
+      setCategories(res.data);
+    });
+  }, []);
+
   return (
     <div className="main__header">
       <div className="landing__main__banner">
@@ -125,19 +101,24 @@ export default function Home() {
       <div className="select__catagories__section">
         <div className="select__catagories__section__heading">
           BROWSE OUR CATEGORIES
-        </div> 
+        </div>
+        {categories.map((category) => (
           <SelectCatagorieCard
-            img={cate5}
-            heading="Barbecue"
-            link="/barbecue"
+            key={category._id}
+            img={category.img}
+            link={`/products/${category._id}`}
+            heading={category.name}
           />
-   
+        ))}
 
-        <SelectCatagorieCard img={cate7} heading="Pizza" link="/pizza" />
+        {/* <SelectCatagorieCard img={cate7} heading="Pizza" link="/pizza" />
         <SelectCatagorieCard img={cate1} heading="Snacks" link="/snacks" />
-      
         <SelectCatagorieCard img={cate4} heading="Biryani" link="/biryani" />
-        <SelectCatagorieCard img={cate5} heading="Chickencurries"link="/chickencurries"/>
+        <SelectCatagorieCard
+          img={cate5}
+          heading="Chickencurries"
+          link="/chickencurries"
+        /> */}
       </div>
       <div className="collection__details__similar__items__list">
         <Slider />
