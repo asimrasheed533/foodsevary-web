@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import banner from "../asstes/banner.png";
-import cate1 from "../asstes/cate1.png";
-import cate4 from "../asstes/cate4.jpg";
-import cate5 from "../asstes/cate5.png";
+// import cate1 from "../asstes/cate1.png";
+// import cate4 from "../asstes/cate4.jpg";
+// import cate5 from "../asstes/cate5.png";
 // import cate6 from "../asstes/cate6.png";
-import cate7 from "../asstes/cate7.png";
+// import cate7 from "../asstes/cate7.png";
 import healthy from "../asstes/healthy.png";
 import delivery from "../asstes/delivery.png";
 import quality from "../asstes/quality.png";
@@ -112,9 +112,7 @@ export default function Home() {
         ))}
 
         {/* <SelectCatagorieCard img={cate7} heading="Pizza" link="/pizza" />
-        <SelectCatagorieCard img={cate1} heading="Snacks" link="/snacks" />
-        <SelectCatagorieCard img={cate4} heading="Biryani" link="/biryani" />
-        <SelectCatagorieCard
+         <SelectCatagorieCard
           img={cate5}
           heading="Chickencurries"
           link="/chickencurries"
