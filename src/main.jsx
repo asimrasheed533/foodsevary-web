@@ -10,7 +10,7 @@ import Pizza from "./screens/pizza";
 import Snacks from "./screens/Snacks";
 import Biryani from "./screens/Biryani";
 import Barbecue from "./screens/Barbecue";
-import Chickencurries from"./screens/\Chickencurries";
+import Chickencurries from "./screens/Chickencurries";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "/products",
+        path: "/products/:id",
         element: <Products />,
       },
       {
@@ -46,9 +46,9 @@ const router = createBrowserRouter([
         element: <Barbecue />,
       },
       {
-        path:"/chickencurries",
-        element:<Chickencurries/>
-      }
+        path: "/chickencurries",
+        element: <Chickencurries />,
+      },
     ],
   },
   {
