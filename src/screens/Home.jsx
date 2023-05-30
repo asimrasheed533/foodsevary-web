@@ -102,14 +102,16 @@ export default function Home() {
         <div className="select__catagories__section__heading">
           BROWSE OUR CATEGORIES
         </div>
-        {categories.map((category) => (
-          <SelectCatagorieCard
-            key={category._id}
-            img={category.img}
-            link={`/products/${category._id}`}
-            heading={category.name}
-          />
-        ))}
+        {categories === ""
+          ? "Loading..."
+          : categories.map((category) => (
+              <SelectCatagorieCard
+                key={category._id}
+                img={category.img}
+                link={`/products/${category._id}`}
+                heading={category.name}
+              />
+            ))}
 
         {/* <SelectCatagorieCard img={cate7} heading="Pizza" link="/pizza" />
          <SelectCatagorieCard
