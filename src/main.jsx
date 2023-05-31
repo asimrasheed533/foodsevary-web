@@ -1,62 +1,44 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./style.scss";
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useLayoutEffect, useState } from "react";
+
+import Cart from "./screens/Cart";
+import Details from "./screens/Details";
+
 import Home from "./screens/Home";
-import React from "react";
-import ReactDOM from "react-dom/client";
-import RootLayout from "./RootLayout";
 import Products from "./screens/Products";
-import Details from "./screens/details";
-import Pizza from "./screens/pizza";
-import Snacks from "./screens/Snacks";
-import Biryani from "./screens/Biryani";
-import Barbecue from "./screens/Barbecue";
-import Chickencurries from "./screens/Chickencurries";
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <RootLayout />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
+import ReactDOM from "react-dom/client";
+import axios from "axios";
+import Header from "./compounts/Header";
+import Footer from "./compounts/Footer";
 
-      {
-        path: "/products/:id",
-        element: <Products />,
-      },
-      {
-        path: "/details",
-        element: <Details />,
-      },
-      {
-        path: "/pizza",
-        element: <Pizza />,
-      },
-      {
-        path: "/snacks",
-        element: <Snacks />,
-      },
-      {
-        path: "/biryani",
-        element: <Biryani />,
-      },
-      {
-        path: "/barbecue",
-        element: <Barbecue />,
-      },
-      {
-        path: "/chickencurries",
-        element: <Chickencurries />,
-      },
-    ],
-  },
-  {
-    path: "*",
-    element: <div className="not__found">404 Page Not Found</div>,
-  },
-]);
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <RouterProvider router={router} />
-);
+function App({}) {
+  const [products, setProducts] = useState([]);
+
+  useLayoutEffect(() => {
+    axios.get(`${window.location.origin}/api/products`).then((res) => {
+      setProducts(res.data.filter((product) => product.isActive === true));
+    });
+  }, []);
+
+  return (
+    <BrowserRouter>
+      <Header products={products} />
+      <Routes>
+        <Route path="/" element={<Home products={products} />} />
+        <Route path="/products" element={<Products products={products} />} />
+        <Route path="/details/:id" element={<Details />} />
+
+        <Route path="/cart" element={<Cart />} />
+        <Route
+          path="*"
+          element={<div className="not__found">Page Not Found</div>}
+        />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  );
+}
