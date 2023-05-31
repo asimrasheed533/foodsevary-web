@@ -112,13 +112,6 @@ export default function Home() {
                 heading={category.name}
               />
             ))}
-
-        {/* <SelectCatagorieCard img={cate7} heading="Pizza" link="/pizza" />
-         <SelectCatagorieCard
-          img={cate5}
-          heading="Chickencurries"
-          link="/chickencurries"
-        /> */}
       </div>
       <div className="collection__details__similar__items__list">
         <Slider />
