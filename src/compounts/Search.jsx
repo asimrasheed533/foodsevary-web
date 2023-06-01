@@ -30,9 +30,6 @@ export default function Search({ list }) {
               setFocus(true);
             }}
           />
-          <button className="header__content__search__bar__button">
-            Search
-          </button>
         </div>
         {focus && (
           <div className="header__content__search__selection">
