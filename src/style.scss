@@ -42,9 +42,10 @@ body {
 .home__main__col__sub__heading {
   width: 100%;
   display: flex;
+  font-size: 18px;
   align-items: center;
   justify-content: center;
-  color: #00a827;
+  color: #964b00;
 }
 .home__main__col__btn {
   width: 100%;
@@ -63,7 +64,6 @@ body {
   cursor: pointer;
   font-size: 16px;
   transition: 0.3s ease-in-out;
-  color: $secondary;
 }
 
 .home__main__col__btn button:hover {
