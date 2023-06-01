@@ -1,6 +1,7 @@
 import "swiper/css";
 import { useEffect, useState } from "react";
-
+import banner from "../asstes/banner.png";
+import { Link } from "react-router-dom";
 import ProductsFilterCard from "..//compounts/ProductsFilterCard";
 import { useLocation } from "react-router-dom";
 
@@ -29,6 +30,26 @@ export default function Products({ products }) {
 
   return (
     <>
+      <div className="landing__main__banner">
+        <div className="landing__main__banner__img">
+          <img src={banner} alt="img" />
+          <div className="landing__main__banner__img__text__wraper">
+            <div className="landing__main__banner__text__container">
+              <div className="landing__main__banner__img__text__heading">
+                Fresh & Healthy <span>Delicious</span> Food Is Waiting For You.
+              </div>
+              <div className="landing__main__banner__img__text__btn">
+                <Link
+                  className="landing__main__banner__img__text__btn__link"
+                  to="/"
+                >
+                  View Food Menu
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="product__container">
         <div className="product__container__header__text__wraper">
           <div className="product__header__heading">Top Rated Items</div>
