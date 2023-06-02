@@ -12,6 +12,7 @@ import ReactDOM from "react-dom/client";
 import axios from "axios";
 import Header from "./compounts/Header";
 import Footer from "./compounts/Footer";
+import Signin from "./screens/Signin";
 
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 
@@ -33,6 +34,7 @@ function App({}) {
         <Route path="/details/:id" element={<Details />} />
 
         <Route path="/cart" element={<Cart />} />
+        <Route path="/signin" element={<Signin />} />
         <Route
           path="*"
           element={<div className="not__found">Page Not Found</div>}
