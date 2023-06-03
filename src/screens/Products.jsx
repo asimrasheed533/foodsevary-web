@@ -4,6 +4,7 @@ import banner from "../asstes/banner.png";
 import { Link } from "react-router-dom";
 import ProductsFilterCard from "..//compounts/ProductsFilterCard";
 import { useLocation } from "react-router-dom";
+import ScrollContainer from "react-indiana-drag-scroll";
 
 export default function Products({ products }) {
   const { state } = useLocation();
@@ -54,9 +55,9 @@ export default function Products({ products }) {
         <div className="product__container__header__text__wraper">
           <div className="product__header__heading">Top Rated Items</div>
         </div>
+        <div className="filter__products__row__type">Filter Type</div>
         <div className="filter__products__col">
-          <div className="filter__products__row">
-            <div className="filter__products__row__type">Filter Type</div>
+          <ScrollContainer className="filter__products__row">
             <div className="filter__products__row__button__wraper">
               <button
                 onClick={() => {
@@ -79,7 +80,7 @@ export default function Products({ products }) {
                 </button>
               ))}
             </div>
-          </div>
+          </ScrollContainer>
         </div>
         <div className="products__filter__card__container__wraper">
           {filterlist.length === 0 ? (
