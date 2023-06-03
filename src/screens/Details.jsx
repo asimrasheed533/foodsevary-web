@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 
 import { cartAtom } from "../global";
 import { useAtom } from "jotai";
-
+import avatr01 from "../asstes/avatr01.png";
 export default function Details() {
   const { state } = useLocation();
   const product = state.product;
@@ -54,7 +54,7 @@ export default function Details() {
               {Array(product?.rating)
                 .fill()
                 .map((_, i) => (
-                  <span key={i}>⭐</span>
+                  <span key={i}>⭐⭐⭐</span>
                 ))}
             </div>
           </div>
@@ -94,6 +94,42 @@ export default function Details() {
             {product?.description}
           </div>
         </div>
+      </div>
+      <div className="reviews__sectoion">
+        <div className="reviews__heading">
+          Reviews <span>(14)</span>
+        </div>
+        <Review
+          img={avatr01}
+          name="Rose "
+          date="12 Days ago"
+          rating="3.5"
+          Comment="I recently had the pleasure of dining at Spice Delight, a Pakistani restaurant, and it was truly an exquisite experience. The moment I stepped in, the aroma of spices filled the air, instantly whetting my appetite."
+        />
+        <Review
+          img={avatr01}
+          name="Rose "
+          date="12 Days ago"
+          rating="3.5"
+          Comment="I recently had the pleasure of dining at Spice Delight, a Pakistani restaurant, and it was truly an exquisite experience. The moment I stepped in, the aroma of spices filled the air, instantly whetting my appetite."
+        />
+      </div>
+    </div>
+  );
+}
+
+function Review({ img, name, date, rating, Comment }) {
+  return (
+    <div className="reviews__list__wraper">
+      <div className="reviews__list__col__img">
+        <img src={img} alt="avatar" />
+      </div>
+      <div className="reviews__list__col">
+        <div className="reviews__list__col__name">
+          {name} <span>{date}</span>
+        </div>
+        <div className="reviews__list__col__rating">{rating} ⭐⭐⭐</div>
+        <div className="reviews__list__col__comment">{Comment}</div>
       </div>
     </div>
   );
