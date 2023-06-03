@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import React from "react";
 import { cartAtom } from "../global";
 import { useAtom } from "jotai";
+import { CartItem } from "../compounts/CartItem";
 
 export default function Cart() {
   const [cart, setCart] = useAtom(cartAtom);
@@ -96,28 +97,6 @@ export default function Cart() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  );
-}
-
-function CartItem({ img, heading, price, onRemove }) {
-  return (
-    <div className="cart__container__wraper__card">
-      <div className="cart__container__wraper__card__img">
-        <img src={img} alt={heading} />
-      </div>
-      <div className="cart__container__wraper__card__text">
-        <div className="cart__container__wraper__card__text__heading">
-          {heading}
-        </div>
-        <div className="cart__container__wraper__card__price">Rs:/{price}</div>
-      </div>
-
-      <div className="cart__container__wraper__card__remove">
-        <button className="cart__remove__btn" onClick={onRemove}>
-          Remove
-        </button>
       </div>
     </div>
   );
