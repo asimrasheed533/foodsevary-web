@@ -10,7 +10,7 @@ export default function Details() {
 
   return (
     <div className="collection__details">
-      <Link to="/products" className="collection__details__back__button">
+      <Link to="/products/:id" className="collection__details__back__button">
         <svg
           width="24"
           height="24"
@@ -108,7 +108,7 @@ export default function Details() {
         />
         <Review
           img={avatr01}
-          name="Rose "
+          name="Zooni"
           date="12 Days ago"
           rating="3.5"
           Comment="I recently had the pleasure of dining at Spice Delight, a Pakistani restaurant, and it was truly an exquisite experience. The moment I stepped in, the aroma of spices filled the air, instantly whetting my appetite."
