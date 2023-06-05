@@ -9,7 +9,7 @@ import Details from "./screens/Details";
 import Home from "./screens/Home";
 import Products from "./screens/Products";
 import ReactDOM from "react-dom/client";
-import axios from "axios";
+import axios from "./utils/axios";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Signin from "./screens/Signin";
@@ -20,7 +20,7 @@ function App({}) {
   const [products, setProducts] = useState([]);
 
   useLayoutEffect(() => {
-    axios.get(`${window.location.origin}/api/products`).then((res) => {
+    axios.get(`products`).then((res) => {
       setProducts(res.data.filter((product) => product.isActive === true));
     });
   }, []);

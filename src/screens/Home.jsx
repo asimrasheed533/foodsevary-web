@@ -16,8 +16,8 @@ import gal07 from "../assets/gal07.png";
 import gal08 from "../assets/gal08.png";
 import SelectCatagorieCard from "../components/SelectCatagorieCard";
 import Slider from "../components/Slider";
-import axios from "axios";
-// import { Zoom } from "swiper";
+import axios from "../utils/axios";
+
 export default function Home() {
   const [categories, setCategories] = useState([]);
   useEffect(() => {
