@@ -1,27 +1,27 @@
 import React, { useEffect, useState } from "react";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
-import logobanner from "../asstes/logobanner.png";
-import main from "../asstes/main.png";
-import healthy from "../asstes/healthy.png";
-import delivery from "../asstes/delivery.png";
-import quality from "../asstes/quality.png";
-import gal01 from "../asstes/gal01.png";
-import gal02 from "../asstes/gal02.png";
-import gal03 from "../asstes/gal03.png";
-import gal04 from "../asstes/gal04.png";
-import gal05 from "../asstes/gal05.png";
-import gal06 from "../asstes/gal06.png";
-import gal07 from "../asstes/gal07.png";
-import gal08 from "../asstes/gal08.png";
-import SelectCatagorieCard from "../compounts/SelectCatagorieCard";
-import Slider from "../compounts/Slider";
+import logobanner from "../assets/logobanner.png";
+import main from "../assets/main.png";
+import healthy from "../assets/healthy.png";
+import delivery from "../assets/delivery.png";
+import quality from "../assets/quality.png";
+import gal01 from "../assets/gal01.png";
+import gal02 from "../assets/gal02.png";
+import gal03 from "../assets/gal03.png";
+import gal04 from "../assets/gal04.png";
+import gal05 from "../assets/gal05.png";
+import gal06 from "../assets/gal06.png";
+import gal07 from "../assets/gal07.png";
+import gal08 from "../assets/gal08.png";
+import SelectCatagorieCard from "../components/SelectCatagorieCard";
+import Slider from "../components/Slider";
 import axios from "axios";
 // import { Zoom } from "swiper";
 export default function Home() {
   const [categories, setCategories] = useState([]);
   useEffect(() => {
-    axios.get(`${window.location.origin}/api/categories`).then((res) => {
+    axios.get(`categories`).then((res) => {
       setCategories(res.data);
     });
   }, []);
@@ -163,7 +163,7 @@ export default function Home() {
                 <SelectCatagorieCard
                   key={category._id}
                   img={category.img}
-                  link={`/products/${category._id}`}
+                  link="/products"
                   heading={category.name}
                 />
               ))}

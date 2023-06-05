@@ -1,5 +1,5 @@
 import React from "react";
-import b1 from "../asstes/b1.jpg";
+import b1 from "../assets/b1.jpg";
 export default function Signin() {
   return (
     <>

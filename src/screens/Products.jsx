@@ -1,8 +1,8 @@
 import "swiper/css";
 import { useEffect, useState } from "react";
-import banner from "../asstes/banner.png";
+import banner from "../assets/banner.png";
 import { Link } from "react-router-dom";
-import ProductsFilterCard from "..//compounts/ProductsFilterCard";
+import ProductsFilterCard from "..//components/ProductsFilterCard";
 import { useLocation } from "react-router-dom";
 import ScrollContainer from "react-indiana-drag-scroll";
 

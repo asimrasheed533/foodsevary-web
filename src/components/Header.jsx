@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Search from "./Search";
 import { cartAtom } from "../global";
-import logofood from "../asstes/logofood.png";
+import logofood from "../assets/logofood.png";
 import { useAtom } from "jotai";
 
 export default function Header({ products }) {

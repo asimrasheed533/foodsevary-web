@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
-import b2 from "../asstes/b2.jpg";
-import s1 from "../asstes/s1.jpg";
-import bbq4 from "../asstes/bbq4.jpg";
-import piz5 from "../asstes/piz5.jpg";
-import chic1 from "../asstes/chic1.webp";
-import b1 from "../asstes/b1.jpg";
-import s3 from "../asstes/s3.webp";
-import piz1 from "../asstes/piz1.jpg";
+import b2 from "../assets/b2.jpg";
+import s1 from "../assets/s1.jpg";
+import bbq4 from "../assets/bbq4.jpg";
+import piz5 from "../assets/piz5.jpg";
+import chic1 from "../assets/chic1.webp";
+import b1 from "../assets/b1.jpg";
+import s3 from "../assets/s3.webp";
+import piz1 from "../assets/piz1.jpg";
 
 import "swiper/css";
 import "swiper/css/pagination";

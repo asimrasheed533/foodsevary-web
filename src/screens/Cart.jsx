@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import React from "react";
 import { cartAtom } from "../global";
 import { useAtom } from "jotai";
-import { CartItem } from "../compounts/CartItem";
+import { CartItem } from "../components/CartItem";
 
 export default function Cart() {
   const [cart, setCart] = useAtom(cartAtom);

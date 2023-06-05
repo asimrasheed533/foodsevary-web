@@ -1,15 +1,15 @@
 import React from "react";
-import banner from "../asstes/banner.png";
+import banner from "../assets/banner.png";
 
-import banner3 from "../asstes/banner3.png";
-import banner1 from "../asstes/banner1.png";
+import banner3 from "../assets/banner3.png";
+import banner1 from "../assets/banner1.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
-import ProductCard from "../compounts/ProductCard";
+import ProductCard from "../components/ProductCard";
 export default function Services() {
   const productslist = [
     {

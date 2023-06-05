@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 
 import { cartAtom } from "../global";
 import { useAtom } from "jotai";
-import avatr01 from "../asstes/avatr01.png";
+import avatr01 from "../assets/avatr01.png";
 export default function Details() {
   const { state } = useLocation();
   const product = state.product;

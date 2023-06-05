@@ -10,8 +10,8 @@ import Home from "./screens/Home";
 import Products from "./screens/Products";
 import ReactDOM from "react-dom/client";
 import axios from "axios";
-import Header from "./compounts/Header";
-import Footer from "./compounts/Footer";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Signin from "./screens/Signin";
 
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
