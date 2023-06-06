@@ -10,7 +10,7 @@ export default function Details() {
 
   return (
     <div className="collection__details">
-      <Link to="/products/:id" className="collection__details__back__button">
+      <Link to="/products" className="collection__details__back__button">
         <svg
           width="24"
           height="24"
