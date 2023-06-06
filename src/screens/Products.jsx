@@ -8,7 +8,7 @@ import ScrollContainer from "react-indiana-drag-scroll";
 
 export default function Products({ products }) {
   const { state } = useLocation();
-  const priceRanges = [15000, 20000, 30000, 40000, 50000];
+  const priceRanges = [500, 1000, 1500, 4000, 5000];
   const [price, setprice] = useState("");
 
   const [filterlist, setFilterlist] = useState(products);
@@ -69,13 +69,7 @@ export default function Products({ products }) {
                 All
               </button>
               {priceRanges.map((price) => (
-                <button
-                  onClick={() => {
-                    setprice(price);
-                    window.scrollTo({ top: 0, behavior: "smooth" });
-                  }}
-                  className="filter__products__row__button"
-                >
+                <button className="filter__products__row__button">
                   RS:/{price}
                 </button>
               ))}
