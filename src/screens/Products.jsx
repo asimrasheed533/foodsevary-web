@@ -59,17 +59,13 @@ export default function Products({ products }) {
         <div className="filter__products__col">
           <ScrollContainer className="filter__products__row">
             <div className="filter__products__row__button__wraper">
-              <button
-                onClick={() => {
-                  setprice("");
-                  window.scrollTo({ top: 0, behavior: "smooth" });
-                }}
-                className="filter__products__row__button"
-              >
-                All
-              </button>
               {priceRanges.map((price) => (
-                <button className="filter__products__row__button">
+                <button
+                  onClick={() => {
+                    setprice(price);
+                  }}
+                  className="filter__products__row__button"
+                >
                   RS:/{price}
                 </button>
               ))}
