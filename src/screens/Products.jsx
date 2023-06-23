@@ -21,13 +21,13 @@ export default function Products({ products }) {
     }
   }, [price]);
 
-  useEffect(() => {
-    if (state) {
-      setFilterlist(
-        products.filter((product) => product.category === state.heading)
-      );
-    }
-  }, [state]);
+  // useEffect(() => {
+  //   if (state) {
+  //     setFilterlist(
+  //       products.filter((product) => product.category === state.heading)
+  //     );
+  //   }
+  // }, [state]);
 
   return (
     <>

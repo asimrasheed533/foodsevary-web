@@ -17,7 +17,10 @@ export default function ProductsFilterCard({ product }) {
           className="products__filter__card__container"
         >
           <div className="products__filter__card__img">
-            <img src={product.img} alt="products" />
+            <img
+              src={import.meta.env.VITE_CLOUDNAIRY_API_URL + product?.img}
+              alt="products food"
+            />
           </div>
           <div className="products__filter__card__row">
             <div className="products__filter__card__row__heading">

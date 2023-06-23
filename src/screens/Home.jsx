@@ -162,9 +162,10 @@ export default function Home() {
             : categories.map((category) => (
                 <SelectCatagorieCard
                   key={category._id}
-                  img={category.img}
+                  img={import.meta.env.VITE_CLOUDNAIRY_API_URL + category.img}
                   link="/products"
                   heading={category.name}
+                  _id={category._id}
                 />
               ))}
         </div>
