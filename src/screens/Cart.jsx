@@ -300,9 +300,9 @@ export default function Cart() {
                       </div>
                     </div>
 
-                    <div className="cart__container__wraper__card__remove">
+                    {/* <div className="cart__container__wraper__card__remove">
                       <button className="cart__remove__btn">Remove</button>
-                    </div>
+                    </div> */}
                   </div>
                 );
               })

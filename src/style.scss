@@ -1293,7 +1293,8 @@ body {
   width: 100%;
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
+  padding: 0em 1em;
   height: 160px;
   margin: 0em 1em;
   background-color: #f0f0f2;
@@ -1314,6 +1315,7 @@ body {
 }
 .cart__container__wraper__card__text__heading {
   line-height: 22px;
+  font-size: 18px;
 }
 .cart__container__wraper__card__price {
   font-size: 20px;
@@ -1353,7 +1355,6 @@ body {
 .cart__container__user__detail__wraper__card {
   width: 100%;
   border-radius: 6px;
-  margin-top: 1.3em;
   display: flex;
   align-items: center;
   justify-content: center;
