@@ -1,14 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
-import b2 from "../assets/b2.jpg";
-import s1 from "../assets/s1.jpg";
-import bbq4 from "../assets/bbq4.jpg";
-import piz5 from "../assets/piz5.jpg";
-import chic1 from "../assets/chic1.webp";
-import b1 from "../assets/b1.jpg";
-import s3 from "../assets/s3.webp";
-import piz1 from "../assets/piz1.jpg";
+import sop1 from "../assets/sop1.jpg";
+import qorma1 from "../assets/qorma1.jpg";
+import SOP2 from "../assets/SOP2.jpg"
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -51,29 +46,27 @@ export default function Slider() {
           loop={true}
           modules={[Pagination, Autoplay]}
         >
+         
           <SwiperSlide>
-            <Arrivalcard img={b2} heading="biryani" price="1000" />
+            <Arrivalcard img={sop1}  />
           </SwiperSlide>
           <SwiperSlide>
-            <Arrivalcard img={s1} heading="pkory" price="500" />
+            <Arrivalcard img={qorma1} />
           </SwiperSlide>
           <SwiperSlide>
-            <Arrivalcard img={bbq4} heading="kbab" price="100" />
+            <Arrivalcard img={SOP2} />
           </SwiperSlide>
           <SwiperSlide>
-            <Arrivalcard img={piz5} heading="veg pizza" price="1000" />
+            <Arrivalcard img={qorma1}  />
           </SwiperSlide>
           <SwiperSlide>
-            <Arrivalcard img={chic1} heading="boneless karahi" price="500" />
+            <Arrivalcard img={sop1} />
           </SwiperSlide>
           <SwiperSlide>
-            <Arrivalcard img={piz1} heading="tikka pizza" price="500" />
+            <Arrivalcard img={qorma1}  />
           </SwiperSlide>
           <SwiperSlide>
-            <Arrivalcard img={s3} heading="cheese balls" price="5000" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Arrivalcard img={b1} heading="crispy chicken" price="500" />
+            <Arrivalcard img={SOP2} />
           </SwiperSlide>
         </Swiper>
       </div>

@@ -39,11 +39,11 @@ export default function Details() {
           <div className="collection__details__main__right__heading">
             {product?.name}
           </div>
-          <div className="collection__details__main__right__sub__heading">
+          {/* <div className="collection__details__main__right__sub__heading">
             {product?.category}
-          </div>
+          </div> */}
           <div className="collection__details__main__right__entry">
-            Price if purchased :
+            Time to cook :
             <div className="collection__details__main__right__entry__price">
               ${product?.price}
             </div>
