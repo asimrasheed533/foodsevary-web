@@ -39,9 +39,7 @@ export default function Details() {
           <div className="collection__details__main__right__heading">
             {product?.name}
           </div>
-          {/* <div className="collection__details__main__right__sub__heading">
-            {product?.category}
-          </div> */}
+
           <div className="collection__details__main__right__entry">
             Time to cook :
             <div className="collection__details__main__right__entry__price">
@@ -58,7 +56,7 @@ export default function Details() {
                 ))}
             </div>
           </div>
-          {product?.stock > 0 ? (
+          {/* {product?.stock > 0 ? (
             cart.find((item) => item._id === product._id) ? (
               <button
                 className="collection__details__main__right__button"
@@ -85,10 +83,10 @@ export default function Details() {
             >
               Out of stock
             </button>
-          )}
+          )} */}
 
           <div className="collection__details__main__right__sub__heading__reverse">
-            Description & Material
+            Tips
           </div>
           <div className="collection__details__main__right__info">
             {product?.description}

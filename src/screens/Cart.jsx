@@ -299,10 +299,6 @@ export default function Cart() {
                         Rs:/{item.price}
                       </div>
                     </div>
-
-                    {/* <div className="cart__container__wraper__card__remove">
-                      <button className="cart__remove__btn">Remove</button>
-                    </div> */}
                   </div>
                 );
               })
