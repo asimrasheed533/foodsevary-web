@@ -1524,10 +1524,64 @@ input::-webkit-inner-spin-button {
   color: #a09d9d;
   padding: 0em 0.5em;
 }
-// .reviews__list__col__comment {
-
-//   width: 600px;
-// }
+.recipes__view__container__cover {
+  width: 100%;
+  height: 400px;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-image: url(./assets/cover.png);
+  border-bottom-right-radius: 60px;
+}
+.recipes__view__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 2em 1em;
+  flex-wrap: wrap;
+}
+.recipes__view__container__text {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.recipes__view__container__text__heading {
+  font-size: 35px;
+  padding-bottom: 0.5em;
+}
+.recipes__view__container__text__heading span {
+  color: $secondary;
+  font-size: 50px;
+  position: relative;
+  font-weight: bold;
+}
+.recipes__view__container__text__heading span::after {
+  content: "";
+  position: absolute;
+  top: 1em;
+  left: 0;
+  transform: translateY(-50%);
+  width: 70px;
+  background-color: $secondary;
+  border-radius: 40px;
+  height: 3px;
+}
+.recipes__view__container__text__subheading {
+  font-size: 20px;
+  width: 630px;
+}
+.recipes__view__container__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recipes__view__container__img img {
+  object-fit: contain;
+  width: 100%;
+  padding: 3em;
+}
 //-------------------------------------------------------------------
 @media (max-width: 1000px) {
   .cart__container__wraper {
@@ -1603,9 +1657,18 @@ input::-webkit-inner-spin-button {
   }
 }
 @media (max-width: 800px) {
+  .recipes__view__container__text__heading {
+    font-size: 28px;
+  }
+  .recipes__view__container__text__heading span {
+    font-size: 40px;
+  }
+  .recipes__view__container__text__subheading {
+    width: 100%;
+  }
   .about__overlay__laft__contant {
     width: 100%;
-    padding: 2em;
+    padding: 2em 0.4em;
   }
   .header__content {
     padding: 1em 2em;
@@ -1629,6 +1692,9 @@ input::-webkit-inner-spin-button {
   }
 }
 @media (max-width: 500px) {
+  // .recipes__view__container__img img {
+  //   width: 80%;
+  // }
   .products__filter__card__img img {
     height: 120px;
     width: 150px;
