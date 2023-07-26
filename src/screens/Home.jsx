@@ -92,6 +92,68 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="delivery__container">
+        <div className="delivery__container__text__wraper">
+          <div className="delivery__container__heading">Why Choose us!</div>
+          <div className="delivery__container__sub__heading">
+            Our fast food delivery service provides a convenient, affordable,
+            and reliable way to enjoy your favorite meals from the comfort of
+            your own home.
+          </div>
+        </div>
+
+        <div className="delivery__container__row">
+          <Fade delay={500}>
+            <div className="delivery__wraper__card">
+              <div className="delivery__wraper__card__img">
+                <img src={healthy} alt="healthy" />
+              </div>
+              <div className="delivery__wraper__card__text">
+                <div className="delivery__wraper__card__text__heading">
+                  Eat Healthy Food
+                </div>
+                <div className="delivery__wraper__card__text__sub__heading">
+                  healthy food means eating a variety of foods that give you the
+                  nutrients you need to maintain your health, feel good, and
+                  have energy.
+                </div>
+              </div>
+            </div>
+          </Fade>
+          <Zoom delay={900}>
+            <div className="delivery__wraper__card">
+              <div className="delivery__wraper__card__img">
+                <img src={quality} alt="quality" />
+              </div>
+              <div className="delivery__wraper__card__text">
+                <div className="delivery__wraper__card__text__heading">
+                  Quality Assurance
+                </div>
+                <div className="delivery__wraper__card__text__sub__heading">
+                  We ensure quality products and services are delivered to our
+                  customers in all major cities across Pakistan.
+                </div>
+              </div>
+            </div>
+          </Zoom>
+          <Zoom delay={1000}>
+            <div className="delivery__wraper__card">
+              <div className="delivery__wraper__card__img">
+                <img src={delivery} alt="delivery" />
+              </div>
+              <div className="delivery__wraper__card__text">
+                <div className="delivery__wraper__card__text__heading">
+                  Instant Delivery
+                </div>
+                <div className="delivery__wraper__card__text__sub__heading">
+                  We ensure quality products and services are delivered to our
+                  customers in all major cities across Pakistan.
+                </div>
+              </div>
+            </div>
+          </Zoom>
+        </div>
+      </div>
       <div className="recipes__view__container__cover">
         {/* <img src={cover} alt="recipies" /> */}
       </div>
@@ -109,127 +171,64 @@ export default function Home() {
           <img src={recp1} alt="recies" />
         </div>
       </div>
-      <div className="main__header">
-        <div className="delivery__container">
-          <div className="delivery__container__text__wraper">
-            <div className="delivery__container__heading">Why Choose us!</div>
-            <div className="delivery__container__sub__heading">
-              Our fast food delivery service provides a convenient, affordable,
-              and reliable way to enjoy your favorite meals from the comfort of
-              your own home.
-            </div>
-          </div>
 
-          <div className="delivery__container__row">
-            <Fade delay={500}>
-              <div className="delivery__wraper__card">
-                <div className="delivery__wraper__card__img">
-                  <img src={healthy} alt="healthy" />
-                </div>
-                <div className="delivery__wraper__card__text">
-                  <div className="delivery__wraper__card__text__heading">
-                    Eat Healthy Food
-                  </div>
-                  <div className="delivery__wraper__card__text__sub__heading">
-                    healthy food means eating a variety of foods that give you
-                    the nutrients you need to maintain your health, feel good,
-                    and have energy.
-                  </div>
-                </div>
-              </div>
-            </Fade>
-            <Zoom delay={900}>
-              <div className="delivery__wraper__card">
-                <div className="delivery__wraper__card__img">
-                  <img src={quality} alt="quality" />
-                </div>
-                <div className="delivery__wraper__card__text">
-                  <div className="delivery__wraper__card__text__heading">
-                    Quality Assurance
-                  </div>
-                  <div className="delivery__wraper__card__text__sub__heading">
-                    We ensure quality products and services are delivered to our
-                    customers in all major cities across Pakistan.
-                  </div>
-                </div>
-              </div>
-            </Zoom>
-            <Zoom delay={1000}>
-              <div className="delivery__wraper__card">
-                <div className="delivery__wraper__card__img">
-                  <img src={delivery} alt="delivery" />
-                </div>
-                <div className="delivery__wraper__card__text">
-                  <div className="delivery__wraper__card__text__heading">
-                    Instant Delivery
-                  </div>
-                  <div className="delivery__wraper__card__text__sub__heading">
-                    We ensure quality products and services are delivered to our
-                    customers in all major cities across Pakistan.
-                  </div>
-                </div>
-              </div>
-            </Zoom>
+      <div className="select__catagories__section">
+        <div className="select__catagories__section__heading">
+          BROWSE OUR CATEGORIES
+        </div>
+        {categories === ""
+          ? "Loading..."
+          : categories.map((category) => (
+              <SelectCatagorieCard
+                key={category._id}
+                img={import.meta.env.VITE_CLOUDNAIRY_API_URL + category.img}
+                link="/products"
+                heading={category.name}
+                _id={category._id}
+              />
+            ))}
+      </div>
+      <div className="gallery__section">
+        <div className="gallery__section__heading">Gallery of our Food</div>
+        <div className="gallery__wraper__row">
+          <div className="gallery__wraper__col__upper">
+            <img src={gal07} alt="gallery food" />
+          </div>
+          <div className="gallery__wraper__col__upper">
+            <img src={gal08} alt="gallery food" />
           </div>
         </div>
-        <div className="select__catagories__section">
-          <div className="select__catagories__section__heading">
-            BROWSE OUR CATEGORIES
+        <div className="gallery__wraper__row">
+          <div className="gallery__wraper__col">
+            <img src={gal01} alt="gallery food" />
           </div>
-          {categories === ""
-            ? "Loading..."
-            : categories.map((category) => (
-                <SelectCatagorieCard
-                  key={category._id}
-                  img={import.meta.env.VITE_CLOUDNAIRY_API_URL + category.img}
-                  link="/products"
-                  heading={category.name}
-                  _id={category._id}
-                />
-              ))}
-        </div>
-        <div className="gallery__section">
-          <div className="gallery__section__heading">Gallery of our Food</div>
-          <div className="gallery__wraper__row">
-            <div className="gallery__wraper__col__upper">
-              <img src={gal07} alt="gallery food" />
-            </div>
-            <div className="gallery__wraper__col__upper">
-              <img src={gal08} alt="gallery food" />
-            </div>
+          <div className="gallery__wraper__col">
+            <img src={gal02} alt="gallery food" />
           </div>
-          <div className="gallery__wraper__row">
-            <div className="gallery__wraper__col">
-              <img src={gal01} alt="gallery food" />
-            </div>
-            <div className="gallery__wraper__col">
-              <img src={gal02} alt="gallery food" />
-            </div>
-            <div className="gallery__wraper__col">
-              <img src={gal05} alt="gallery food" />
-            </div>
-            <div className="gallery__wraper__col">
-              <img src={gal03} alt="gallery food" />
-            </div>
+          <div className="gallery__wraper__col">
+            <img src={gal05} alt="gallery food" />
           </div>
-          <div className="gallery__wraper__row">
-            <div className="gallery__wraper__col">
-              <img src={gal04} alt="gallery food" />
-            </div>
-            <div className="gallery__wraper__col">
-              <img src={gal08} alt="gallery food" />
-            </div>
-            <div className="gallery__wraper__col">
-              <img src={gal05} alt="gallery food" />
-            </div>
-            <div className="gallery__wraper__col">
-              <img src={gal06} alt="gallery food" />
-            </div>
+          <div className="gallery__wraper__col">
+            <img src={gal03} alt="gallery food" />
           </div>
         </div>
-        <div className="collection__details__similar__items__list">
-          <Slider />
+        <div className="gallery__wraper__row">
+          <div className="gallery__wraper__col">
+            <img src={gal04} alt="gallery food" />
+          </div>
+          <div className="gallery__wraper__col">
+            <img src={gal08} alt="gallery food" />
+          </div>
+          <div className="gallery__wraper__col">
+            <img src={gal05} alt="gallery food" />
+          </div>
+          <div className="gallery__wraper__col">
+            <img src={gal06} alt="gallery food" />
+          </div>
         </div>
+      </div>
+      <div className="collection__details__similar__items__list">
+        <Slider />
       </div>
     </>
   );

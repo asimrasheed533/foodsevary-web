@@ -18,7 +18,7 @@ export default function Header({ products }) {
           />
         </Link>
         <Search list={products} />
-        <Link to="/cart" className="header__content__button">
+        {/* <Link to="/cart" className="header__content__button">
           <div className="header__content__button__badge">{cart?.length}</div>
           <svg width="30" height="30" viewBox="0 0 20 19" fill="currentColor">
             <path
@@ -29,7 +29,7 @@ export default function Header({ products }) {
               strokeMiterlimit="10"
             />
           </svg>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
