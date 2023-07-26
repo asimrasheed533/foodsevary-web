@@ -157,21 +157,6 @@ export default function Home() {
       <div className="recipes__view__container__cover">
         {/* <img src={cover} alt="recipies" /> */}
       </div>
-      <div className="recipes__view__container">
-        <div className="recipes__view__container__text">
-          <div className="recipes__view__container__text__heading">
-            <span>Find</span>Recipes
-          </div>
-          <div className="recipes__view__container__text__subheading">
-            Discover custom recipes for your home kitchen or batch formulas for
-            resturants and commerical kitchens.
-          </div>
-        </div>
-        <div className="recipes__view__container__img">
-          <img src={recp1} alt="recies" />
-        </div>
-      </div>
-
       <div className="select__catagories__section">
         <div className="select__catagories__section__heading">
           BROWSE OUR CATEGORIES
@@ -188,6 +173,21 @@ export default function Home() {
               />
             ))}
       </div>
+      <div className="recipes__view__container">
+        <div className="recipes__view__container__text">
+          <div className="recipes__view__container__text__heading">
+            <span>Find</span>Recipes
+          </div>
+          <div className="recipes__view__container__text__subheading">
+            Discover custom recipes for your home kitchen or batch formulas for
+            resturants and commerical kitchens.
+          </div>
+        </div>
+        <div className="recipes__view__container__img">
+          <img src={recp1} alt="recies" />
+        </div>
+      </div>
+
       <div className="gallery__section">
         <div className="gallery__section__heading">Gallery of our Food</div>
         <div className="gallery__wraper__row">
