@@ -19,8 +19,10 @@ import cover from "../assets/cover.png";
 import SelectCatagorieCard from "../components/SelectCatagorieCard";
 import Slider from "../components/Slider";
 import axios from "../utils/axios";
+import { motion, useScroll } from "framer-motion";
 
 export default function Home() {
+  const { scrollYProgress } = useScroll();
   const [categories, setCategories] = useState([]);
   useEffect(() => {
     axios.get(`categories`).then((res) => {
@@ -30,6 +32,18 @@ export default function Home() {
 
   return (
     <>
+      <motion.div
+        style={{
+          scaleX: scrollYProgress,
+          position: "fixed",
+          top: 0,
+          left: 0,
+          right: 0,
+          background: "#00a827",
+          height: 10,
+          transformOrigin: 0,
+        }}
+      ></motion.div>
       <div className="home__main__container">
         <div className="home__main__col">
           <Fade left>
@@ -227,6 +241,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="collection__details__similar__items__list">
         <Slider />
       </div>

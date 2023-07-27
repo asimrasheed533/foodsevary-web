@@ -6,6 +6,9 @@ $secondary: #00a827;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 body {
   margin: 0;
   padding: 0;
