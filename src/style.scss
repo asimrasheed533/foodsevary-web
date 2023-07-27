@@ -1545,6 +1545,9 @@ input::-webkit-inner-spin-button {
   padding: 2em 1em;
   flex-wrap: wrap;
 }
+.recipes__view__container:nth-child(odd) {
+  flex-direction: row-reverse;
+}
 .recipes__view__container__text {
   display: flex;
   align-items: flex-start;

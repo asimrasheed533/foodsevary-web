@@ -15,7 +15,8 @@ import gal06 from "../assets/gal06.png";
 import gal07 from "../assets/gal07.png";
 import gal08 from "../assets/gal08.png";
 import recp1 from "../assets/recp1.png";
-import cover from "../assets/cover.png";
+import recip2 from "../assets/recip2.png";
+import recip3 from "../assets/recip3.png";
 import SelectCatagorieCard from "../components/SelectCatagorieCard";
 import Slider from "../components/Slider";
 import axios from "../utils/axios";
@@ -187,20 +188,30 @@ export default function Home() {
               />
             ))}
       </div>
-      <div className="recipes__view__container">
-        <div className="recipes__view__container__text">
-          <div className="recipes__view__container__text__heading">
-            <span>Find</span>Recipes
-          </div>
-          <div className="recipes__view__container__text__subheading">
-            Discover custom recipes for your home kitchen or batch formulas for
-            resturants and commerical kitchens.
-          </div>
-        </div>
-        <div className="recipes__view__container__img">
-          <img src={recp1} alt="recies" />
-        </div>
-      </div>
+      <Fade left delay={500}>
+        <RecipiesCard
+          image={recp1}
+          heading="Find"
+          subheading="Discover custom recipes for your home kitchen or batch formulas for
+            resturants and commerical kitchens."
+        />
+      </Fade>
+      <Fade right>
+        <RecipiesCard
+          image={recip2}
+          heading="Make"
+          subheading="Discover custom recipes for your home kitchen or batch formulas for
+            resturants and commerical kitchens."
+        />
+      </Fade>
+      <Fade left>
+        <RecipiesCard
+          image={recip3}
+          heading="Share"
+          subheading="Discover custom recipes for your home kitchen or batch formulas for
+            resturants and commerical kitchens."
+        />
+      </Fade>
 
       <div className="gallery__section">
         <div className="gallery__section__heading">Gallery of our Food</div>
@@ -246,5 +257,23 @@ export default function Home() {
         <Slider />
       </div>
     </>
+  );
+}
+
+function RecipiesCard({ image, heading, subheading }) {
+  return (
+    <div className="recipes__view__container">
+      <div className="recipes__view__container__text">
+        <div className="recipes__view__container__text__heading">
+          <span>{heading}</span>Recipes
+        </div>
+        <div className="recipes__view__container__text__subheading">
+          {subheading}
+        </div>
+      </div>
+      <div className="recipes__view__container__img">
+        <img src={image} alt="recies" />
+      </div>
+    </div>
   );
 }
