@@ -41,7 +41,7 @@ export default function Details() {
           </div>
 
           <div className="collection__details__main__right__entry">
-            Time to cook :
+            price :
             <div className="collection__details__main__right__entry__price">
               ${product?.price}
             </div>
