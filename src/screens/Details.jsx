@@ -6,11 +6,11 @@ import avatr01 from "../assets/avatr01.png";
 export default function Details() {
   const { state } = useLocation();
   const product = state.product;
-  const [cart, setCart] = useAtom(cartAtom);
+  // const [cart, setCart] = useAtom(cartAtom);
 
   return (
     <div className="collection__details">
-      <Link to="/products" className="collection__details__back__button">
+      <Link to="/" className="collection__details__back__button">
         <svg
           width="24"
           height="24"
@@ -56,34 +56,6 @@ export default function Details() {
                 ))}
             </div>
           </div>
-          {/* {product?.stock > 0 ? (
-            cart.find((item) => item._id === product._id) ? (
-              <button
-                className="collection__details__main__right__button"
-                onClick={() => {
-                  setCart(cart.filter((item) => item._id !== product._id));
-                }}
-              >
-                Remove from cart
-              </button>
-            ) : (
-              <button
-                className="collection__details__main__right__button"
-                onClick={() => {
-                  setCart([...cart, product]);
-                }}
-              >
-                Add to cart
-              </button>
-            )
-          ) : (
-            <button
-              className="collection__details__main__right__button"
-              disabled
-            >
-              Out of stock
-            </button>
-          )} */}
 
           <div className="collection__details__main__right__sub__heading__reverse">
             Tips
