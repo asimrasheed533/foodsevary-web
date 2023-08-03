@@ -10,7 +10,7 @@ export default function Cart() {
       <div className="cart__container__header">
         <div className="cart__container__header__heading">
           <Link
-            to="/products"
+            to="/products:id"
             className="cart__container__header__heading__text"
           >
             Back to shop
