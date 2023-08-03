@@ -6,10 +6,13 @@ import ProductsFilterCard from "..//components/ProductsFilterCard";
 import { useLocation } from "react-router-dom";
 import ScrollContainer from "react-indiana-drag-scroll";
 
-export default function Products({ products }) {
-  const { state } = useLocation();
-  const priceRanges = [500, 1000, 1500, 4000, 5000];
-  const [price, setprice] = useState("");
+export default function Products({ products: unFillteredProducts }) {
+  const category = location.pathname.split("/").at(-1);
+  const priceRanges = [2000, 5000, 10000, 15000, 20000, 30000, 40000, 50000];
+  const [price, setPrice] = useState("");
+  const products = unFillteredProducts.filter(
+    (product) => product.category === category
+  );
 
   const [filterlist, setFilterlist] = useState(products);
 
@@ -62,7 +65,7 @@ export default function Products({ products }) {
               {priceRanges.map((price) => (
                 <button
                   onClick={() => {
-                    setprice(price);
+                    setPrice(price);
                   }}
                   className="filter__products__row__button"
                 >
