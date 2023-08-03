@@ -182,7 +182,7 @@ export default function Home() {
               <SelectCatagorieCard
                 key={category._id}
                 img={import.meta.env.VITE_CLOUDNAIRY_API_URL + category.img}
-                link="/products"
+                link={`/products/${category._id}`}
                 heading={category.name}
                 _id={category._id}
               />
