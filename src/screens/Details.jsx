@@ -41,9 +41,9 @@ export default function Details() {
           </div>
 
           <div className="collection__details__main__right__entry">
-            price :
+            Time to cook :
             <div className="collection__details__main__right__entry__price">
-              ${product?.price}
+              {product?.time}
             </div>
           </div>
           <div className="collection__details__main__right__entry">
@@ -58,7 +58,7 @@ export default function Details() {
           </div>
 
           <div className="collection__details__main__right__sub__heading__reverse">
-            Tips
+            How to cook?
           </div>
           <div className="collection__details__main__right__info">
             {product?.description}
