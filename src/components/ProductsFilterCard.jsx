@@ -26,6 +26,9 @@ export default function ProductsFilterCard({ product }) {
           <div className="products__filter__card__row__heading">
             {product.name}
           </div>
+          <div className="products__filter__card__row__heading">
+            {product.time}
+          </div>
 
           <div className="products__filter__card__row">
             {/* <div className="products__filter__card__row__entry">

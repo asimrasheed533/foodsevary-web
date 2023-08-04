@@ -8,7 +8,7 @@ import ScrollContainer from "react-indiana-drag-scroll";
 
 export default function Products({ products: unFillteredProducts }) {
   const category = location.pathname.split("/").at(-1);
-  const priceRanges = [2000, 5000, 10000, 15000, 20000, 30000, 40000, 50000];
+  // const priceRanges = [2000, 5000, 10000, 15000, 20000, 30000, 40000, 50000];
   const [price, setPrice] = useState("");
   const products = unFillteredProducts.filter(
     (product) => product.category === category
@@ -58,11 +58,11 @@ export default function Products({ products: unFillteredProducts }) {
         <div className="product__container__header__text__wraper">
           <div className="product__header__heading">Top Rated Items</div>
         </div>
-        <div className="filter__products__row__type">Filter Type</div>
+        {/* <div className="filter__products__row__type">Filter Type</div> */}
         <div className="filter__products__col">
           <ScrollContainer className="filter__products__row">
             <div className="filter__products__row__button__wraper">
-              {priceRanges.map((price) => (
+              {/* {priceRanges.map((price) => (
                 <button
                   onClick={() => {
                     setPrice(price);
@@ -71,7 +71,7 @@ export default function Products({ products: unFillteredProducts }) {
                 >
                   RS:/{price}
                 </button>
-              ))}
+              ))} */}
             </div>
           </ScrollContainer>
         </div>

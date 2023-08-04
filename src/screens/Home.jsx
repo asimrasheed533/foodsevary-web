@@ -190,26 +190,23 @@ export default function Home() {
       </div>
       <Fade left delay={500}>
         <RecipiesCard
-          image={recp1}
+          image={recp3}
           heading="Find"
-          subheading="Discover custom recipes for your home kitchen or batch formulas for
-            resturants and commerical kitchens."
+          subheading="Fresh, flavorful and (mostly) healthy recipes made for real, actual, every day life. Helping you celebrate the joy of food in a totally non-intimidating way.We shares easy, classic Pakistani recipes that are accessible to modern home cooks everywhere."
         />
       </Fade>
       <Fade right>
         <RecipiesCard
           image={recip2}
           heading="Make"
-          subheading="Discover custom recipes for your home kitchen or batch formulas for
-            resturants and commerical kitchens."
+          subheading="If you learn a recipe, you can cook the recipe. If you learn the technique, you can cook anything.A recipe has no soul. You, as the cook, must bring soul to the recipe."
         />
       </Fade>
       <Fade left>
         <RecipiesCard
-          image={recip3}
+          image={recip1}
           heading="Share"
-          subheading="Discover custom recipes for your home kitchen or batch formulas for
-            resturants and commerical kitchens."
+          subheading="Of course,i will continue to share my favourite recipes just like my mother, grandmother and family shared with me over the years.And now i will be adding little bit of lighter touch to some of these dishes.   "
         />
       </Fade>
 
