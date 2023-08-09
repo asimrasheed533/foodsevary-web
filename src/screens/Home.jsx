@@ -14,7 +14,7 @@ import gal05 from "../assets/gal05.png";
 import gal06 from "../assets/gal06.png";
 import gal07 from "../assets/gal07.png";
 import gal08 from "../assets/gal08.png";
-import recp1 from "../assets/recp1.png";
+import recip1 from "../assets/recp1.png";
 import recip2 from "../assets/recip2.png";
 import recip3 from "../assets/recip3.png";
 import SelectCatagorieCard from "../components/SelectCatagorieCard";
@@ -190,7 +190,7 @@ export default function Home() {
       </div>
       <Fade left delay={500}>
         <RecipiesCard
-          image={recp3}
+          image={recip3}
           heading="Find"
           subheading="Fresh, flavorful and (mostly) healthy recipes made for real, actual, every day life. Helping you celebrate the joy of food in a totally non-intimidating way.We shares easy, classic Pakistani recipes that are accessible to modern home cooks everywhere."
         />

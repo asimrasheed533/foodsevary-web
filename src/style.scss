@@ -810,6 +810,8 @@ body {
 .collection__details__main__right__info {
   display: flex;
   flex-direction: column;
+  font-size: 16px;
+  line-height: 30px;
 }
 .collection__details__main__right__info__entry {
   margin-left: 2em;
@@ -879,7 +881,7 @@ body {
   display: none;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 1.5em;
+  padding: 1em;
   background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0) 100%);
   top: 0;
   left: 0;
@@ -892,7 +894,7 @@ body {
 .products__filter__card__row__heading {
   width: 100%;
   text-decoration: none;
-  color: black;
+  color: #00a827;
   font-size: 18px;
   font-weight: 600;
   display: flex;
