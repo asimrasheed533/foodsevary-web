@@ -257,7 +257,8 @@ export default function Home() {
       </div>
 
       <Link
-        to="whatsapp://send?abid=03017112442&text=senging"
+        target="_blank"
+        to="https://wa.me/923004575442"
         className="whatsapp__section"
       >
         <div className="whatsapp__icon__container">

@@ -1589,6 +1589,7 @@ input::-webkit-inner-spin-button {
   align-items: flex-end;
   justify-content: flex-end;
   position: relative;
+  text-decoration: none;
 }
 .whatsapp__icon__container {
   position: absolute;
@@ -1606,6 +1607,7 @@ input::-webkit-inner-spin-button {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: black;
 }
 
 .whatsapp__icon__container img {
