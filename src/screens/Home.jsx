@@ -17,10 +17,12 @@ import gal08 from "../assets/gal08.png";
 import recip1 from "../assets/recp1.png";
 import recip2 from "../assets/recip2.png";
 import recip3 from "../assets/recip3.png";
+import whatsapp from "../assets/whatsapp.png";
 import SelectCatagorieCard from "../components/SelectCatagorieCard";
 import Slider from "../components/Slider";
 import axios from "../utils/axios";
 import { motion, useScroll } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -253,6 +255,16 @@ export default function Home() {
       <div className="collection__details__similar__items__list">
         <Slider />
       </div>
+
+      <Link
+        to="whatsapp://send?abid=03017112442&text=senging"
+        className="whatsapp__section"
+      >
+        <div className="whatsapp__icon__container">
+          Contact Us
+          <img src={whatsapp} alt="whatsapp" />
+        </div>
+      </Link>
     </>
   );
 }

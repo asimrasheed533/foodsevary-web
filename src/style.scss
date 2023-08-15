@@ -1583,6 +1583,36 @@ input::-webkit-inner-spin-button {
   width: 100%;
   padding: 3em;
 }
+.whatsapp__section {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+}
+.whatsapp__icon__container {
+  position: absolute;
+  position: fixed;
+  bottom: 1em;
+  right: 20px;
+  height: 60px;
+  width: 150px;
+  border-radius: 10px;
+  background-color: #f8f6f6;
+  z-index: 9999;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp__icon__container img {
+  width: 60px;
+  height: 60px;
+  padding: 0.2em;
+}
 //-------------------------------------------------------------------
 @media (max-width: 1000px) {
   .cart__container__wraper {
