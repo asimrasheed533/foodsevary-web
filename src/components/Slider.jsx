@@ -1,10 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
-import sop1 from "../assets/sop1.jpg";
-import qorma1 from "../assets/qorma1.jpg";
-import SOP2 from "../assets/SOP2.jpg"
-
+import sop1 from "../assets/sop1.png";
+import sopp from "../assets/sopp.jpg";
+import brani1 from "../assets/brani1.jpg"
+import brani2 from "../assets/brani2.jpg"
+import kor1 from "../assets/kor1.jpg"
+import kor2 from "../assets/kor2.jpg"
+import sop2 from "../assets/sop2.jpg"
+import metha1 from "../assets/metha1.jpg"
+import metha2 from "../assets/metha2.jpg"
+import metha3 from "../assets/metha3.jpg"
+import shar1 from "../assets/shar1.jpg"
+import shar2 from "../assets/shar2.jpg"
+import shar3 from "../assets/shar3.jpg"
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -51,24 +60,45 @@ export default function Slider() {
             <Arrivalcard img={sop1}  />
           </SwiperSlide>
           <SwiperSlide>
-            <Arrivalcard img={qorma1} />
+            <Arrivalcard img={kor1} />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <Arrivalcard img={metha1}  />
           </SwiperSlide>
           <SwiperSlide>
-            <Arrivalcard img={SOP2} />
+            <Arrivalcard img={brani1} />
           </SwiperSlide>
           <SwiperSlide>
-            <Arrivalcard img={qorma1}  />
+            <Arrivalcard img={shar1} />
           </SwiperSlide>
           <SwiperSlide>
-            <Arrivalcard img={sop1} />
+            <Arrivalcard img={kor2}  />
+          </SwiperSlide>
+        
+          <SwiperSlide>
+            <Arrivalcard img={shar2} />
           </SwiperSlide>
           <SwiperSlide>
-            <Arrivalcard img={qorma1}  />
+            <Arrivalcard img={sop2} />
           </SwiperSlide>
           <SwiperSlide>
-            <Arrivalcard img={SOP2} />
+            <Arrivalcard img={metha2}  />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Arrivalcard img={brani2}  />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Arrivalcard img={shar3} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Arrivalcard img={sopp} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Arrivalcard img={metha3}  />
           </SwiperSlide>
         </Swiper>
+       
       </div>
     </>
   );
