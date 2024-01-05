@@ -45,7 +45,7 @@ body {
 .home__main__col__sub__heading {
   width: 100%;
   display: flex;
-  font-size: 18px;
+  font-size: 16px;
   align-items: center;
   justify-content: center;
   color: #964b00;
@@ -507,6 +507,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 0 2em;
 }
 .delivery__container__heading {
   font-size: 32px;
@@ -1009,7 +1010,8 @@ body {
   width: 100%;
   max-width: 95%;
   line-height: 20px;
-  font-size: 1.1em;
+  font-size: 16px;
+  text-align: justify;
 }
 .about__overlay__right__contant {
   width: 50%;
@@ -1537,7 +1539,7 @@ input::-webkit-inner-spin-button {
   justify-content: center;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 2em 1em;
+  padding: 2em 2em;
   flex-wrap: wrap;
 }
 .recipes__view__container:nth-child(odd) {
@@ -1570,7 +1572,7 @@ input::-webkit-inner-spin-button {
   height: 3px;
 }
 .recipes__view__container__text__subheading {
-  font-size: 20px;
+  font-size: 16px;
   width: 630px;
 }
 .recipes__view__container__img {
@@ -1688,6 +1690,10 @@ input::-webkit-inner-spin-button {
     z-index: 999;
     position: absolute;
   }
+  .about__overlay__laft__contant {
+    width: 100%;
+    padding: 2em 0.4em;
+  }
 }
 @media (max-width: 800px) {
   .recipes__view__container__text__heading {
@@ -1699,10 +1705,7 @@ input::-webkit-inner-spin-button {
   .recipes__view__container__text__subheading {
     width: 100%;
   }
-  .about__overlay__laft__contant {
-    width: 100%;
-    padding: 2em 0.4em;
-  }
+
   .header__content {
     padding: 1em 2em;
   }
@@ -1725,9 +1728,10 @@ input::-webkit-inner-spin-button {
   }
 }
 @media (max-width: 500px) {
-  // .recipes__view__container__img img {
-  //   width: 80%;
-  // }
+  .delivery__wraper__card {
+    width: 100%;
+    max-width: 400px;
+  }
   .products__filter__card__img img {
     height: 120px;
     width: 150px;
@@ -1765,7 +1769,7 @@ input::-webkit-inner-spin-button {
     line-height: 32px;
   }
   .landing__about__section {
-    padding: 0em;
+    padding: 0em 2em;
   }
   .gallery__wraper__col img {
     height: 100px;
