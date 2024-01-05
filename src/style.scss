@@ -1551,12 +1551,13 @@ input::-webkit-inner-spin-button {
   flex-direction: column;
 }
 .recipes__view__container__text__heading {
-  font-size: 35px;
+  font-size: 30px;
   padding-bottom: 0.5em;
 }
 .recipes__view__container__text__heading span {
   color: $secondary;
-  font-size: 50px;
+  font-size: 40px;
+  padding-right: 0.2em;
   position: relative;
   font-weight: bold;
 }
@@ -1697,10 +1698,10 @@ input::-webkit-inner-spin-button {
 }
 @media (max-width: 800px) {
   .recipes__view__container__text__heading {
-    font-size: 28px;
+    font-size: 20px;
   }
   .recipes__view__container__text__heading span {
-    font-size: 40px;
+    font-size: 30px;
   }
   .recipes__view__container__text__subheading {
     width: 100%;
@@ -1772,10 +1773,10 @@ input::-webkit-inner-spin-button {
     padding: 0em 2em;
   }
   .gallery__wraper__col img {
-    height: 100px;
+    height: 200px;
   }
   .gallery__wraper__col__upper img {
-    height: 140px;
+    height: 190px;
   }
   .select__catagories__section__heading {
     font-size: 20px;
